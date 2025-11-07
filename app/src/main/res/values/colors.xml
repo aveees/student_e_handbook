@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bulsu_light_green">#B7F871</color>
+    <color name="bulsu_dark_green">#37B34A</color>
+    <color name="bulsu_gold">#EAF48F</color>
+    <color name="bulsu_leaf">#50C648</color>
+</resources>
