@@ -58,6 +58,8 @@
 \n\nIt began to operate as an obscure non-formal training school, offering short-term courses, temporarily housed at Bustos Central School. After six months of existence, it was transferred to the present site and address at Poblacion, Bustos, Bulacan. The Voc-Tech school, including its land, buildings, and equipment, was donated to BulSU by the municipality of Bustos, Bulacan on May 12, 1976, by virtue of BCAT Board Resolution No. 400."
                     android:textSize="14sp"
                     android:textColor="#064c24"
+                    android:fontFamily="@font/montserrat_medium"
+
                     android:layout_weight="1"
                     android:lineSpacingExtra="4dp" />
             </LinearLayout>
@@ -73,6 +75,7 @@
                 android:textColor="#064c24"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:lineSpacingExtra="4dp"
                 android:background="@drawable/rounded_corners" />
 
@@ -86,6 +89,7 @@
                 android:textColor="#064c24"
                 android:padding="12dp"
                 android:lineSpacingExtra="4dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:background="@drawable/rounded_corners" />
 
             <TextView
@@ -95,6 +99,7 @@
                 android:text="In 1993, Mr. Edgardo Mateo reassumed the directorship. In preparation for offering teacher education and basic engineering programs, he embarked on a physical development project. Under his term, the college building was constructed on a newly acquired 1.2-hectare lot at the back of the present location. However, he did not finish his term because of his sudden death.
 \n\nDr. Isabelita Santiago took over the directorship of BSU Bustos Campus amidst the backdrop of expanding curricular programs and the subsequent increase of enrollment, not only in Bulacan but also from Northern provinces and nearby towns of Pampanga. She vigorously pursued the development of BSU Bustos Campus, providing direction in program offerings and initiating faculty development programs supported by the administration. Her leadership was cut short by her untimely death on May 21, 2002."
                 android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#064c24"
                 android:padding="12dp"
                 android:lineSpacingExtra="4dp"
@@ -108,6 +113,7 @@
                 android:textSize="14sp"
                 android:textColor="#064c24"
                 android:padding="12dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:lineSpacingExtra="4dp"
                 android:background="@drawable/rounded_corners" />
             <TextView
@@ -117,6 +123,7 @@
                 android:text="In October 2007, Prof. Cornelio O. Garcia was appointed as the new Director of BulSU Bustos Campus. A guidance counselor and English professor with 26 years of service at the campus, he was known for his strong managerial and counseling skills. He envisioned ushering in a new wave of paradigm shifts in the university branch and among the faculty members, paving the way for the campus to break new ground and reach greater heights.
 \n\nOn April 19, 2010, Dr. Alberto J. Valenzuela was designated as Director of Bustos Campus. Prior to his appointment, he served as Director of the Public Employment Service Office (PESO), coordinator of in-plant training at BulSU-CIT Main Campus, and chairman of the Mechanical and Welding Technology Department. His experience as a BulSU Board of Regents member and as President of the Faculty Union for eight years honed his leadership skills."
                 android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#064c24"
                 android:padding="12dp"
                 android:lineSpacingExtra="4dp"
@@ -134,6 +141,7 @@
                 android:textSize="14sp"
                 android:textColor="#064c24"
                 android:padding="12dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:lineSpacingExtra="4dp"
                 android:background="@drawable/rounded_corners" />
             <TextView
@@ -143,6 +151,7 @@
                 android:text="On August 1, 2017, Dr. Ciriaco M. Garcia was designated the new Dean of the Campus. His strong determination and passion to lead enabled Bulacan State University Bustos Campus to soar higher and achieve greater opportunities."
                 android:textSize="14sp"
                 android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_medium"
                 android:padding="12dp"
                 android:lineSpacingExtra="4dp"
                 android:background="@drawable/rounded_corners" />

@@ -29,6 +29,15 @@
         <activity android:name=".DashboardActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".HistoryActivity"/>
+        <activity android:name=".GeneralProvisionsActivity"/>
+        <activity android:name=".InstitutionalPhilosophyActivity" />
+        <activity android:name=".PolicyStatementsActivity" />
+        <activity android:name=".ClassificationOfStudentsActivity" />
+        <activity android:name=".StudentRightsObligationsActivity" />
+        <activity android:name=".ObedienceToLawsActivity" />
+        <activity android:name=".StudentsOrientationActivity" />
+
+
         <activity android:name=".HymnActivity"/>
         <activity android:name=".AcademicRegulationsActivity"/>
 

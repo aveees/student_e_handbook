@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Section 1: Introduction -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="The Bulacan State University strives to maintain an educational environment that supports the academic, professional, and personal development of all members of the community, where relationships among students, faculty, and staff are marked by mutual respect and appreciation for each other's rights and responsibilities.
+
+The University recognizes the rights of its students guaranteed by the Constitution of the Philippines and the Education Act of 1982." />
+            </LinearLayout>
+
+            <!-- Section 2: Rights under the 1987 Constitution -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:lineSpacingExtra="4dp"
+                    android:text="I. Rights under the 1987 Constitution"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/ins_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="\n1. The right to life, liberty, and property under due process of law;
+\n2. The right to equal protection of the law;
+\n3. The right against unreasonable searches, seizures, and illegal arrests;
+\n4. The right to privacy of communication and correspondence;
+\n5. The freedom of speech and expression;
+\n6. The right to peaceably assemble and petition lawful authorities for redress of grievances;
+\n7. The right to free exercise and enjoyment of religious profession and worship;
+\n8. The liberty of abode and the right to travel;
+\n9. The right to public information;
+\n10. The right to form organizations or associations;
+\n11. The right to free access to the courts and quasi-judicial bodies, and to adequate legal assistance;
+\n12. All rights of the accused as provided for under the Bill of Rights;
+\n13. The right against arbitrary detention;
+\n14. The right to effective and reasonable participation in matters affecting their welfare and student life;
+\n15. The right to academic freedom within the limitations of the law;
+\n16. The right of suffrage;
+\n17. The right to health;
+\n18. The right to quality education;
+\n19. The right to select a profession or course of study subject to fair, reasonable, and equitable admission and academic requirements;
+\n20. The right to a balanced and healthful ecology in accord with the rhythm and harmony of nature; and
+\n21. All other rights guaranteed under the Constitution not mentioned above." />
+            </LinearLayout>
+
+            <!-- Section 3: Rights under the Education Act of 1982 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:lineSpacingExtra="4dp"
+                    android:text="II. Rights under the Education Act of 1982"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/ins_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="1. The right to receive quality education through competent instruction conducive to full development as persons with human dignity;
+\n2. The right to freely choose their field of study and to continue their course except in case of academic deficiency or violation of disciplinary regulations;
+\n3. The right to school guidance and counseling services for making informed decisions and selecting suitable career alternatives;
+\n4. The right to access their own school records while maintaining confidentiality;
+\n5. The right to issuance of official certificates, diplomas, transcripts, and transfer credentials within 30 days from request;
+\n6. The right to publish student newspapers and invite resource persons during convocation, symposium, and similar activities;
+\n7. The right to freely express opinions and suggestions and communicate with appropriate academic and administrative bodies;
+\n8. The right to form, establish, join, and participate in school-recognized organizations for intellectual, cultural, spiritual, and physical growth;
+\n9. The right to participate in policy formulation affecting the school through representation in appropriate governing bodies;
+\n10. The right to be free from involuntary contributions except those approved by their organizations." />
+            </LinearLayout>
+
+            <!-- Section 4: Obligations -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:lineSpacingExtra="4dp"
+                    android:text="III. Obligations"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/ins_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="All bona fide students of the University shall be covered by all obligations as citizens mandated in the Constitution and Education Act of 1982:
+\n1. To render personal military or civic service as provided by law;
+\n2. To develop patriotism, love of humanity, respect for human rights, and appreciation of national heroes;
+\n3. To understand rights and accept duties of citizenship, strengthen ethical and spiritual values, develop moral character and critical thinking;
+\n4. To exert efforts to develop potentialities for service;
+\n5. To uphold academic integrity, achieve excellence, and abide by rules and regulations;
+\n6. To promote and maintain peace and tranquility in the school;
+\n7. To participate actively in civil affairs and social development;
+\n8. To exercise rights responsibly, aware of accountability;
+\n9. To strive for an upright, virtuous, and useful life;
+\n10. To love, respect, and obey parents and maintain family solidarity;
+\n11. To respect customs, authorities, laws, and democratic principles;
+\n12. To help observe individual rights and strengthen freedom for progress and peace." />
+            </LinearLayout>
+
+            <!-- Section 5: Responsibilities -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:lineSpacingExtra="4dp"
+                    android:text="IV. Responsibilities"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/ins_text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Students have responsibilities they accept through membership in the University's learning community. Responsibilities include:
+\n1. To be courteous, respectful, and orderly inside and outside the University;
+\n2. To adhere to University rules, including wearing ID, dress code, and following regulations;
+\n3. To sport a decent hairstyle and hair color;
+\n4. To refrain from wearing excessive jewelry and ensure safety in fashion choices;
+\n5. To exercise freedom of expression responsibly and in line with community values." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Logos at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Logo"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo" />
+    </LinearLayout>
+
+</LinearLayout>

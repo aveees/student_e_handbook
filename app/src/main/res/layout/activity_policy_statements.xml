@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Paragraph -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="The Bulacan State University recognizes that the student is the central figure in all its educational programs, projects, and activities, and that his/her self-realization made possible through formal education is the measure of the attainment of the institutional goals. The University likewise realizes the importance of the student’s participation and cooperation in the establishment and maintenance of a healthy and peaceful campus environment conducive to the efficient and effective attainment of educational objectives. Hence, within the atmosphere of unity of purpose and commitment to shared responsibilities, the University adheres to the following policies:" />
+            </LinearLayout>
+
+            <!-- POLICY STATEMENTS Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/ins_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POLICY STATEMENTS"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Policy Text -->
+                <TextView
+                    android:id="@+id/ins_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="1. The University shall promote and protect the physical, intellectual, moral, spiritual, and social well-being of the students.
+\n2. The University shall respect the individual and collective rights of students as provided for by law, public policy, and generally accepted customs and traditions.
+\n3. The University shall guarantee the right to quality education of all students and shall act appropriately to make such education accessible.
+\n4. The University shall not discriminate against any student regardless of sex, socio-economic status, political beliefs, religion, and aspirations.
+\n5. The University shall support students’ initiatives and provide for their participation in matters affecting their interests and well-being." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Logos at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Logo"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo" />
+    </LinearLayout>
+
+</LinearLayout>

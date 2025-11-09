@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Paragraph -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="The guiding philosophy of the Bulacan State University is contained in its statements of vision, mission and goals. In support of the national agenda for higher education articulated by the Commission on Higher Education, the University, as a state institution, pursues the following vision, mission and goals." />
+            </LinearLayout>
+
+            <!-- VISION Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/ins_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VISION"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Vision Text -->
+                <TextView
+                    android:id="@+id/ins_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Bulacan State University is a progressive knowledge-generating institution globally recognized for excellent instruction, pioneering research, and responsive community engagements."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- MISSION Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/ins_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Vision Text -->
+                <TextView
+                    android:id="@+id/ins_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Bulacan State University exists to produce highly competent, ethical
+and service-oriented professionals that contribute to the sustainable socio-
+2
+economic growth and development of the nation."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- GOALS Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/ins_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOALS"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Vision Text -->
+                <TextView
+                    android:id="@+id/ins_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In the pursuit of its mission, the University gears its initiatives and efforts
+towards attainment of the following goals:
+\n\n1. Provide Relevant Quality and Accessible Education;
+\n2. Provide Innovative and Responsive Research and Extension Programs;
+\n3. BulSU in Regional Development;
+\n4. Sound Financial Management and Resource Generation; and
+\n5. Good Governance. "
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Logos at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Logo"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo" />
+    </LinearLayout>
+</LinearLayout>

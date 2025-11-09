@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Main Content -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/ins_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:text="All new students are required to attend the Handog Ni BulSU Kay
+Bunso. It is a yearly student orientation intended for new (freshmen and
+transfer) students of the University. Student orientation programs are designed
+to initiate the integration of newly admitted first-year and transfer undergraduate
+students into the academic, cultural, and social climate of the University. At the
+Student Orientation, you will meet with different people in the academe. It also
+provides a chance to meet other incoming BSU students. The program is
+designed to prepare freshmen for the academic rigor at BulSU, introduce them
+to the rigors and joys of schooling traditions and acquaint them with our campus
+resources. The program is an opportunity for the new students to discover the
+different academic facilities of the BSU community. During the program they
+will begin to build a network of resources that will help them to start their BSU
+journey on the right path.
+\n\nThe Old students are also given an annual Re-orientation because it is
+expected that some of the rules and regulations are forgotten as the students stay
+in the university"/>      </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Logos at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Logo"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo" />
+    </LinearLayout>
+
+</LinearLayout>
