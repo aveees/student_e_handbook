@@ -6,6 +6,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.button.MaterialButton;
+
 public class GetStartedActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +15,7 @@ public class GetStartedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        Button btnGetStarted = findViewById(R.id.btn_get_started);
+        MaterialButton btnGetStarted = findViewById(R.id.btn_get_started);
         TextView aboutText = findViewById(R.id.about_text);
 
         btnGetStarted.setOnClickListener(v ->

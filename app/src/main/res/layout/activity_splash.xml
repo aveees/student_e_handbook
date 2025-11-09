@@ -5,68 +5,73 @@
     android:id="@+id/splashed_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/gradient_stage1"
     tools:context=".SplashActivity">
 
-    <!-- 3D Logo -->
-    <ImageView
-        android:id="@+id/logo_eagle_3d"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:alpha="0"
-        android:src="@drawable/bulsu_logo_3d"
-        android:layout_gravity="center" />
-
-    <!-- Flat Logo -->
-    <ImageView
-        android:id="@+id/logo_eagle_flat"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:alpha="0"
-        android:src="@drawable/eagles_logo"
-        android:layout_gravity="center" />
-
-    <!-- Text and Button -->
+    <!-- Center everything inside this vertical container -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
-        android:layout_marginBottom="120dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/title"
+        <!-- Top Section: Text + Logo -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BULSU"
-            android:textSize="34sp"
-            android:textStyle="bold"
-            android:alpha="0"
-            android:textColor="#204B20"
-            android:gravity="center" />
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <TextView
-            android:id="@+id/subtitle"
+            <!-- BULSU text -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BULSU"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:alpha="0"
+                android:textColor="#204B20"
+                android:fontFamily="@font/bona_nova_sc_bold"
+                android:gravity="center"
+                android:layout_marginBottom="60dp" />
+
+            <!-- Flat Logo -->
+            <ImageView
+                android:id="@+id/logo_eagle_flat"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:alpha="0"
+                android:src="@drawable/eagles_logo"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <!-- Subtitle and Button -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bustos Campus"
-            android:textSize="16sp"
-            android:alpha="0"
-            android:textColor="#204B20"
-            android:gravity="center"
-            android:layout_marginTop="4dp" />
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/get_started"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get Started"
-            android:alpha="0"
-            android:layout_marginTop="24dp"
-            android:backgroundTint="#38B34A"
-            android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bona_nova_sc_bold"
+                android:text="Bustos Campus"
+                android:textSize="20sp"
+                android:alpha="0"
+                android:textColor="#204B20"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
     </LinearLayout>
-
 </FrameLayout>

@@ -28,6 +28,9 @@
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".AboutActivity" />
+        <activity android:name=".HistoryActivity"/>
+        <activity android:name=".HymnActivity"/>
+        <activity android:name=".AcademicRegulationsActivity"/>
 
     </application>
 

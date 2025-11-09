@@ -1,0 +1,178 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    android:padding="0dp">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Campus Image -->
+            <ImageView
+                android:id="@+id/history_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/his_pic"
+                android:contentDescription="BulSU Bustos Campus Gate"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true"
+                android:elevation="2dp" />
+
+            <!-- Text blocks -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/history_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="The Bulacan State University Bustos Campus is the oldest and the first satellite campus of the university. It was initially organized when civic-minded citizens, headed by the late General Alejo Santos, established the Bustos Vocational and Technical School in November 1975.
+\n\nIt began to operate as an obscure non-formal training school, offering short-term courses, temporarily housed at Bustos Central School. After six months of existence, it was transferred to the present site and address at Poblacion, Bustos, Bulacan. The Voc-Tech school, including its land, buildings, and equipment, was donated to BulSU by the municipality of Bustos, Bulacan on May 12, 1976, by virtue of BCAT Board Resolution No. 400."
+                    android:textSize="14sp"
+                    android:textColor="#064c24"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/history_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In the same year, Mr. Simplicio Reyes started managing the school as it offered secondary education and short-term courses such as engine repair, tune-up, tailoring, practical electricity, and drafting.
+\n\nIn 1977, Mr. Venancio Magdirila became in-charge of the Bustos Branch and was responsible for the expansion of program offerings to include secondary education. It was in his term when initial plans to offer teacher education were conceived, but these were not realized because of the acute shortage of facilities and faculty.
+\n\nIn June 1979, Mr. Aurelio F. Dionisio was designated in-charge of BCAT Bustos. Through his able leadership, Bustos Campus was able to pursue wide-ranging physical plan development and add more courses to the technical education offerings. The campus served as the hub for trade and industrial training in Bustos and its neighboring municipalities, which included the nearby towns of Pampanga."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+
+            <TextView
+                android:id="@+id/history_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr. Edgardo S. Mateo later took over and continued the supervision of the campus even while secondary education was being phased out due to DECS/DBM resolutions transferring secondary education in SUCs to the DECS fold.
+\n\nIn 1992, Dr. Danilo S. Hilario was designated as Director of the Bustos Branch and of the Auxiliary Service of the College with secondary education completely phased out. He launched innovative plans for reengineering the goals and objectives of the campus. One of his major accomplishments was the launching of programs that built efficient citizen workers, offering terminal courses in Automotive Technology, Radio Mechanics, Cosmetology, Garments Trade, Drafting, and Food Technology. Massive faculty development programs were also launched, including in-service training to expose the faculty to the realm of the college setting."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+
+            <TextView
+                android:id="@+id/history_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In 1993, Mr. Edgardo Mateo reassumed the directorship. In preparation for offering teacher education and basic engineering programs, he embarked on a physical development project. Under his term, the college building was constructed on a newly acquired 1.2-hectare lot at the back of the present location. However, he did not finish his term because of his sudden death.
+\n\nDr. Isabelita Santiago took over the directorship of BSU Bustos Campus amidst the backdrop of expanding curricular programs and the subsequent increase of enrollment, not only in Bulacan but also from Northern provinces and nearby towns of Pampanga. She vigorously pursued the development of BSU Bustos Campus, providing direction in program offerings and initiating faculty development programs supported by the administration. Her leadership was cut short by her untimely death on May 21, 2002."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+            <TextView
+                android:id="@+id/history_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In June 2002, Prof. Angelina D. Cinco was promoted from Admission Coordinator to Acting Director. By August of the same year, she assumed the full Directorship of the campus. She envisioned additional majors in teacher education to make its programs more responsive to the changing needs of the new millennium. She also planned the establishment of a food-processing center, which would strengthen the university’s connection to neighboring towns and industries. Lastly, she envisioned a review center for teacher education to help graduates prepare for their licensure examinations.
+\n\nDr. Ladislao D. Marcelo replaced Prof. Cinco when she was transferred to the main campus to share her expertise in managing the BulSU Hostel. Dr. Marcelo brought with him his vast experience as an AACCUP Accreditator, successfully leading the campus to pass the AACCUP Level I Accreditation in March 2007. However, his stint at Bustos Campus was cut short due to his transfer to BulSU-Meneses Campus."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+            <TextView
+                android:id="@+id/history_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In October 2007, Prof. Cornelio O. Garcia was appointed as the new Director of BulSU Bustos Campus. A guidance counselor and English professor with 26 years of service at the campus, he was known for his strong managerial and counseling skills. He envisioned ushering in a new wave of paradigm shifts in the university branch and among the faculty members, paving the way for the campus to break new ground and reach greater heights.
+\n\nOn April 19, 2010, Dr. Alberto J. Valenzuela was designated as Director of Bustos Campus. Prior to his appointment, he served as Director of the Public Employment Service Office (PESO), coordinator of in-plant training at BulSU-CIT Main Campus, and chairman of the Mechanical and Welding Technology Department. His experience as a BulSU Board of Regents member and as President of the Faculty Union for eight years honed his leadership skills."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+            <TextView
+                android:id="@+id/history_text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="As a result of Dr. Valenzuela’s competent administration, the Bulacan State University Bustos Campus successfully passed the Level I Accreditation for the programs:
+
+\n\nBachelor of Secondary Education (BSED) Major in Physical Science
+\nBachelor in Industrial Technology (BIT) with majors in Automotive, Foods, Drafting, Electronics, and Electrical
+
+\n\nThis accreditation was granted after the AACCUP Survey Visit on July 1, 2014."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+            <TextView
+                android:id="@+id/history_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="On August 1, 2017, Dr. Ciriaco M. Garcia was designated the new Dean of the Campus. His strong determination and passion to lead enabled Bulacan State University Bustos Campus to soar higher and achieve greater opportunities."
+                android:textSize="14sp"
+                android:textColor="#064c24"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/rounded_corners" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Logos fixed at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Logo 1"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Logo 2" />
+    </LinearLayout>
+
+</LinearLayout>

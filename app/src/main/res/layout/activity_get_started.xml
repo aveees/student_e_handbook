@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient_stage2"
     android:gravity="center"
     tools:context=".GetStartedActivity">
@@ -33,33 +34,6 @@
         android:gravity="center"
         android:layout_marginTop="40dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/bulsu_logo"
-                android:layout_marginEnd="12dp"
-                android:contentDescription="BulSU Logo" />
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/eagles_logo"
-                android:contentDescription="Eagle Logo" />
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/bustos_logo"
-                android:layout_marginStart="12dp"
-                android:contentDescription="Bustos Logo" />
-        </LinearLayout>
-
         <TextView
             android:id="@+id/univ_name"
             android:layout_width="wrap_content"
@@ -67,8 +41,8 @@
             android:text="BULACAN STATE UNIVERSITY"
             android:textColor="#1B1B1B"
             android:textStyle="bold"
-            android:textSize="18sp"
-            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/bona_nova_sc_bold"
             android:gravity="center"
             android:layout_marginTop="10dp" />
 
@@ -78,9 +52,37 @@
             android:layout_height="wrap_content"
             android:text="Bustos Campus"
             android:textColor="#1B1B1B"
-            android:textSize="14sp"
-            android:fontFamily="@font/montserrat_medium"
+            android:textSize="20sp"
+            android:fontFamily="@font/bona_nova_sc_regular"
             android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@drawable/bulsu_logo"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="BulSU Logo" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/eagles_logo"
+                android:layout_marginTop="25dp"
+                android:contentDescription="Eagle Logo" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bustos_logo"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Bustos Logo" />
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Center welcome text -->
@@ -91,7 +93,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_below="@id/top_section"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="100dp">
 
         <TextView
             android:id="@+id/welcome_text"
@@ -99,33 +101,37 @@
             android:layout_height="wrap_content"
             android:text="WELCOME,"
             android:textColor="@color/bulsu_gold"
-            android:textSize="35sp"
+            android:textSize="24sp"
+            android:textStyle="italic"
             android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginBottom="0dp"
             android:gravity="center" />
 
         <TextView
             android:id="@+id/bulsuan_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80sp"
             android:text="BulSUan!"
             android:textColor="@color/bulsu_gold"
-            android:textSize="50sp"
+            android:textSize="58sp"
             android:textStyle="bold"
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
-            android:layout_marginTop="1dp" />
+            android:paddingTop="0dp"
+            android:layout_marginTop="0dp" />
 
         <TextView
             android:id="@+id/handbook_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="STUDENT DIGITAL HANDBOOK"
+            android:text="STUDENT DIGITAL
+            HANDBOOK"
             android:textColor="@color/bulsu_gold"
-            android:textSize="14sp"
-            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="22sp"
+            android:fontFamily="@font/bona_nova_sc_bold"
             android:gravity="center"
-            android:layout_marginTop="6dp"
-            android:letterSpacing="0.1" />
+            android:layout_marginTop="1dp"
+            android:letterSpacing="0.08" />
     </LinearLayout>
 
     <!-- Buttons at the bottom -->
@@ -138,16 +144,21 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="40dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_get_started"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GET STARTED"
-            android:background="@drawable/btn_green_outline"
-            android:textColor="#FFFFFF"
             android:fontFamily="@font/montserrat_semibold"
-            android:paddingHorizontal="32dp"
-            android:paddingVertical="10dp" />
+            android:textAllCaps="true"
+            android:paddingHorizontal="36dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="12dp"
+            style="@style/CustomMaterialButton"
+            android:elevation="4dp"
+            />
+
+
 
         <TextView
             android:id="@+id/about_text"
