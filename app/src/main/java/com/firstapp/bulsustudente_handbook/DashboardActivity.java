@@ -1,9 +1,11 @@
 package com.firstapp.bulsustudente_handbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -40,6 +42,29 @@ public class DashboardActivity extends AppCompatActivity {
         // --- Drawer + Menu ---
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
+        View headerView = navigationView.getHeaderView(0); // Get the header view
+        Button btnAbout = headerView.findViewById(R.id.btn_about);
+        Button btnMission = headerView.findViewById(R.id.btn_mission);
+        Button btnVision = headerView.findViewById(R.id.btn_vision);
+        Button btnGoals = headerView.findViewById(R.id.btn_goals);
+        Button btnCalendar = headerView.findViewById(R.id.btn_calendar);
+        Button btnScheduler = headerView.findViewById(R.id.btn_scheduler);
+
+        btnAbout.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, AboutActivity.class));
+        });
+
+        btnMission.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, MissionActivity.class));
+        });
+
+        btnVision.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, VisionActivity.class));
+        });
+        btnGoals.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, GoalsActivity.class));
+        });
+
         iconMenu = findViewById(R.id.menu_icon);
 
         iconMenu.setOnClickListener(v -> drawerLayout.openDrawer(navigationView));

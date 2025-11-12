@@ -36,6 +36,11 @@
         <activity android:name=".StudentRightsObligationsActivity" />
         <activity android:name=".ObedienceToLawsActivity" />
         <activity android:name=".StudentsOrientationActivity" />
+        <activity android:name=".MissionActivity" />
+        <activity android:name=".VisionActivity" />
+        <activity android:name=".GoalsActivity" />
+
+
 
 
         <activity android:name=".HymnActivity"/>

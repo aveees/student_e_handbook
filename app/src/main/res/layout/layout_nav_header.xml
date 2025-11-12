@@ -41,12 +41,35 @@
             android:gravity="center_horizontal"
             android:layout_marginBottom="20dp">
 
-            <Button android:text="ABOUT" style="@style/SideNavButton" />
-            <Button android:text="MISSION" style="@style/SideNavButton" />
-            <Button android:text="VISION" style="@style/SideNavButton" />
-            <Button android:text="GOALS" style="@style/SideNavButton" />
-            <Button android:text="ACADEMIC CALENDAR" style="@style/SideNavButton" />
-            <Button android:text="SCHEDULER" style="@style/SideNavButton" />
+            <Button
+                android:id="@+id/btn_about"
+                android:text="ABOUT"
+                style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_mission"
+                android:text="MISSION"
+                style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_vision"
+                android:text="VISION"
+                style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_goals"
+                android:text="GOALS"
+                style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_calendar"
+                android:text="ACADEMIC CALENDAR"
+                style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_scheduler"
+                android:text="SCHEDULER"
+                style="@style/SideNavButton" />
         </LinearLayout>
 
         <!-- Spacer -->

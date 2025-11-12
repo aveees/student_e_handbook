@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Main Content -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/eagles_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/eagles_logo"
+                    android:contentDescription="BULSU Eagle Logo"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/bustos_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bustos_logo"
+                    android:contentDescription="Bustos Logo"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/ins_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Bulacan State University Bustos Campus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/link_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Website: https://www.bulsu.edu.ph/ "
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/link_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Email: admissions.bulsu.bustoscampus@gmail.com"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/link_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Portal: https://bulsu.heims.ph/"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT THE DEVELOPERS"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="12dp"/>
+                <TextView
+                android:id="@+id/test3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#064c24"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textStyle="italic"
+                android:lineSpacingExtra="4dp"
+                android:text="This application was developed by dedicated students from Bulacan State University – Bustos Campus as part of their BS Information Technology program for the year 2025."
+                android:layout_marginBottom="10dp"/>
+
+
+                <!-- Developer 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/jealian"
+                        android:contentDescription="Jealian Abby Sulit"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/profile_circle_bg"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jealian Abby Sulit"
+                        android:textColor="#064c24"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+                <!-- Developer 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/jan"
+                        android:contentDescription="Janssen Sombrio"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/profile_circle_bg"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Janssen Sombrio"
+                        android:textColor="#064c24"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+                <!-- Developer 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/justine"
+                        android:contentDescription="Justine T. Veneracion"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/profile_circle_bg"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Justine T. Veneracion"
+                        android:textColor="#064c24"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+                <!-- Developer 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/fransua"
+                        android:contentDescription="Fransua John Villesis"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/profile_circle_bg"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fransua John Villesis"
+                        android:textColor="#064c24"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+                <!-- Developer 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/mike"
+                        android:contentDescription="Mike Mondano"
+                        android:layout_marginEnd="12dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/profile_circle_bg"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mike Mondano"
+                        android:textColor="#064c24"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/devs_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="© 2025 Bulacan State University – Bustos Campus\nAll Rights Reserved." />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
