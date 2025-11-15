@@ -57,9 +57,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
                 case "Student Conduct and Discipline":
                     context.startActivity(new Intent(context, StudentConductActivity.class));
                     break;
-//                case "Student Affairs and Services":
-//                    context.startActivity(new Intent(context, StudentAffairsActivity.class));
-//                    break;
+                    case "Student Affairs and Services":
+                    context.startActivity(new Intent(context, StudentAffairsActivity.class));
+                    break;
 //                case "Program, Faculty, and Curriculum":
 //                    context.startActivity(new Intent(context, ProgramFacultyActivity.class));
 //                    break;

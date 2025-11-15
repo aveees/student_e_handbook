@@ -11,14 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class StudentOrganizationsActivity extends AppCompatActivity {
+public class StudentHandbookDevelopmentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_student_organizations);
+        setContentView(R.layout.activity_student_handbook_development);
 
         // Apply window insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -36,7 +36,7 @@ public class StudentOrganizationsActivity extends AppCompatActivity {
         TextView headerTitle = header.findViewById(R.id.header_title);
         TextView breadcrumbs = header.findViewById(R.id.breadcrumbs);
 
-        headerTitle.setText("STUDENT ORGANIZATIONS");
+        headerTitle.setText("STUDENT HANDBOOK DEVELOPMENT");
         breadcrumbs.setText("STUDENT DEVELOPMENT");
 
         backBtn.setOnClickListener(v -> onBackPressed());

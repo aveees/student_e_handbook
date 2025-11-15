@@ -1,7 +1,6 @@
 package com.firstapp.bulsustudente_handbook;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,16 +10,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class StudentOrganizationsActivity extends AppCompatActivity {
+public class StudentSocioEconomicActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_student_organizations);
+        setContentView(R.layout.activity_student_socio_economic);
 
-        // Apply window insets
+        // INSETS
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -30,14 +28,12 @@ public class StudentOrganizationsActivity extends AppCompatActivity {
         // ----------------------------------------
         // ✅ HEADER SETUP
         // ----------------------------------------
-        View header = findViewById(R.id.header_section);
+        ImageView backBtn = findViewById(R.id.menu_icon);
+        TextView headerTitle = findViewById(R.id.header_title);
+        TextView breadcrumbs = findViewById(R.id.breadcrumbs);
 
-        ImageView backBtn = header.findViewById(R.id.menu_icon);
-        TextView headerTitle = header.findViewById(R.id.header_title);
-        TextView breadcrumbs = header.findViewById(R.id.breadcrumbs);
-
-        headerTitle.setText("STUDENT ORGANIZATIONS");
-        breadcrumbs.setText("STUDENT DEVELOPMENT");
+        headerTitle.setText("STUDENT SOCIO-ECONOMIC");
+        breadcrumbs.setText("STUDENT SERVICES");
 
         backBtn.setOnClickListener(v -> onBackPressed());
     }

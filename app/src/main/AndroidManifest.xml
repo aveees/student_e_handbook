@@ -12,24 +12,84 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BulSUStudentEHandbook"
         tools:targetApi="31">
-
-        <!-- Splash screen as launcher -->
+        <activity
+            android:name=".StudentInsuranceClaimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentGrievanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentElectionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlacementEmploymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CareerDevelopmentInternshipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuidanceCounsellingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentOrganizationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHandbookDevelopmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CulturalArtsAffairsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentPublicationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRewardIncentivesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentGovernmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDevelopmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentWelfareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentsWithSpecialNeedsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSocioEconomicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScholarshipsFinancialAidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdmissionsOrientationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfficeOfTheDeanSAS"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAffairsActivity"
+            android:exported="false" /> <!-- Splash screen as launcher -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Other screens -->
+        </activity> <!-- Other screens -->
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".HistoryActivity"/>
-        <activity android:name=".GeneralProvisionsActivity"/>
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".GeneralProvisionsActivity" />
         <activity android:name=".InstitutionalPhilosophyActivity" />
         <activity android:name=".PolicyStatementsActivity" />
         <activity android:name=".ClassificationOfStudentsActivity" />
@@ -39,13 +99,8 @@
         <activity android:name=".MissionActivity" />
         <activity android:name=".VisionActivity" />
         <activity android:name=".GoalsActivity" />
-
-
-
-
-        <activity android:name=".HymnActivity"/>
-        <activity android:name=".AcademicRegulationsActivity"/>
-
+        <activity android:name=".HymnActivity" />
+        <activity android:name=".AcademicRegulationsActivity" />
     </application>
 
 </manifest>
