@@ -28,6 +28,710 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- STUDENT SOCIO-COMMUNITY INVOLVEMENT Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/socio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT SOCIO-COMMUNITY INVOLVEMENT"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Text with paragraph spacing -->
+                <TextView
+                    android:id="@+id/socio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The Office of Socio-Community Involvement shall have a head of the office. Its primary function is to create and promote programs that offer opportunities designed to develop the social awareness, personal internalization, and meaningful contribution of the students to nation-building." />
+            </LinearLayout>
+            <!-- STUDENT SOCIO-COMMUNITY OBJECTIVES Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/objectives_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBJECTIVES"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- BULLET 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ensure opportunities for meaningful socio-civic involvement of students, including volunteerism, environmental protection, etc."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ensure that students are insured during their field work days."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Develop awareness of the Philippine socio-economic situation by confronting basic community problems."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Instill among BulSU community members, especially students and people in the outside community, a strong desire to improve and maintain sanitary environmental conditions."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Help promote national campaigns towards self-sufficiency in the basic necessities of life."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Assist the City of Malolos in the cleaning and greening campaign."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Promote a smoke-free and drug-free environment within the Province."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- DUTIES AND FUNCTIONS OF THE OFFICE Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/duties_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DUTIES AND FUNCTIONS OF THE OFFICE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- BULLET 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Develops programs for the promotion of volunteerism, values, and environmental protection by coordinating with other units of the university, government agencies, and NGOs like BulSU SEEK, SAVE ME Movement, GreenPeace Philippines, Earth Island Institute, and DENR."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Establishes standard procedures to monitor and assure the security and safety of students conducting community immersion activities, extension services, community surveys, relief operations, NSTP community services, and other academic and non-academic engagements."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Implements programs educating students on the prevention and deterrence of dangerous drug use, with referral for treatment and rehabilitation in compliance with Republic Act 9165. Conducted in coordination with agencies like PDEA, PNP, NBI, DOH, DILG, and other anti-drug task forces."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Develops campaign materials for dissemination of information on dangerous drugs to students, faculty, parents, and the community."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Gives recognition to the outstanding contribution of student-volunteers annually."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Prepares periodic reports such as annual program of activities, accomplishment reports, office performance reports, and other necessary documents."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinates with other SAS units and academic units for collaboration and cooperation in programs and activities."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 8 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Develops programs and activities that support students with special needs and disabilities to enhance social and moral disposition."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 9 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Attends programs, meetings, conferences, and summits related to environmental protection, volunteerism, anti-drug abuse, and other inter-agency activities."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 10 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Establishes linkages and networking to build good socio-community relations in the university and other communities for better coordination, facilitation, and monitoring of office programs."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 11 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Performs other duties and responsibilities as may be deemed necessary in his/her position."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- SERVICES OFFERED Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/services_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SERVICES OFFERED"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- BULLET 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Hold an annual university-wide Anti-Drug Abuse Campaign for all students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Facilitate regular random drug testing among students in coordination with PDEA and make resolutions based on the test results."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Hold programs and activities for the development of initiative or positive values of students toward volunteerism and environmental protection."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Provide regular orientation on safety and security to students involved in immersion programs, extension programs, community outreach, and other socio-community activities."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Make an advocacy movement involving students on anti-drug abuse, environmental protection, and volunteerism."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Regularly monitor the safety status of students engaged in immersion programs, extension programs, community outreach, and other socio-community activities conducted inside the university or in the community at large."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Recognize student efforts in promoting and participating in environmental protection programs in the community."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 8 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Distribute campaign materials on dangerous drugs to students, faculty, parents, and the community."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

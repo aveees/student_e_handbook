@@ -28,6 +28,424 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Guidance and Counseling Services Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/gcs_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GUIDANCE AND COUNSELING SERVICES"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description with paragraph spacing -->
+                <TextView
+                    android:id="@+id/gcs_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The BulSU Guidance and Counseling Services (GCS), as an integral part of its educational system, opens its avenues through services for individuals, families, or groups who are referred and/or voluntarily seeking guidance and counseling.\n\n
+To function effectively in their environment, each individual must be able to make intelligent decisions and adjust to different aspects of personal life and the community. These abilities are not innate; they have to be developed gradually through education, which provides numerous opportunities and learning experiences for such development.\n\n
+The Guidance and Counseling Services Center (GCS) stands as one of the most important sources of these opportunities. GCS recognizes each individual's right to make personal choices and aims to assist them in decision-making, promoting the gradual development of independent judgment.\n\n
+Its principles integrate the student’s knowledge of themselves, their strengths, weaknesses, aptitudes, talents, interests, and the potential of themselves and others, for enhancement of roles in personal life and community interaction.\n\n
+GCS also helps bring into focus the needs and problems of students, anticipating and using this information for curriculum development, and formulation of school policies and regulations, in line with its academic contribution and mandate." />
+
+            </LinearLayout>
+            <!-- Functions of the Office Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/functions_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FUNCTIONS OF THE OFFICE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description Paragraph -->
+                <TextView
+                    android:id="@+id/functions_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="center"
+                    android:text="This office provides the following set of services: Guidance service by using an integrated approach to the development of well-functioning individuals primarily by helping them to utilize their potentials to the fullest; Counseling through individual and/or group intervention designated to facilitate positive change in student behavior, feelings, and attitudes; Appraisal by gathering information about students through the use of psychological tests and/or projective techniques; Follow-up through systematic monitoring to determine the effectiveness of guidance activities; and Referral with a multi-disciplinary team of specialists to ensure that special needs of students are met." />
+
+            </LinearLayout>
+            <!-- Services Offered Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/services_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SERVICES OFFERED"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Service 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Individual Inventory Services - The Guidance Center utilizes personal, psychological and social data given to students, and guides the University administration in developing related student programs and services. The significant facts about the students such as family background, academic achievement, curricular and co-curricular activities, test results and other pertinent information are enumerated in the student cumulative record."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+
+                <!-- Service 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Information Services - The Guidance Center aims to provide students with a greater knowledge of educational, vocational and personal–social opportunities so they can make intelligent choices and decisions in an increasingly complex society. Materials about school programs and bulletins, personal-social journals and brochures, job bulletins and pamphlets and other related publications are available in the Guidance Center. University rules and regulations, roles and functions of teaching and non-teaching personnel. Symposiums and seminar-workshops on topics related to personal-social concerns of the students are either conducted or sponsored by the Guidance Center. The Center guides students toward career awareness and educational identity through psychological testing and career counseling, dissemination of career information and job offerings."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+
+                <!-- Service 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Counseling Service - The Counseling service is provided to assist the student in exploring his feelings, values, perceptions, interpersonal relationships, fears and life choices. In so doing, he will be able to understand himself better to become a self-directed individual."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+
+                <!-- Service 4 with nested points -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Testing Service - Testing is an appraisal service given to obtain a measure of the student’s ability, achievement and other characteristics. These data are used to predict future performance, diagnose student problems and learning difficulties and evaluate instructional methods and programs. Strengths and weaknesses in the areas of personality, aptitudes, interests, motivation and job skills are assessed through the use of standardized tests. The test results are interpreted to the students for self-awareness, growth and development. The Guidance Center also administers standardized tests to the qualifiers for:"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Nested Tests -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Clerical and Teaching positions"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Sponsored scholarships"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Graduate School Admission Test"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Mental Ability Test (MAT) for College freshmen"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="College Adjustment Scale (CAS) for 2nd year students"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_arrow_right"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="OMNI Personality Inventory for 3rd year students"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Service 5 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Referral Service - Referral is the act of transferring an individual to another person or agency either within or outside the school. It is made for the purpose of specialized assistance. Some areas of concern which necessitate referrals are:"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Nested Referral Points -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Emotionally disturbed" android:textColor="#064c24" android:textSize="14sp" android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Physically handicapped" android:textColor="#064c24" android:textSize="14sp" android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Financially needy" android:textColor="#064c24" android:textSize="14sp" android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Educationally misplaced" android:textColor="#064c24" android:textSize="14sp" android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Cases or situations detrimental to a peaceful and happy family life" android:textColor="#064c24" android:textSize="14sp" android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Service 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginEnd="8dp" android:src="@drawable/ic_arrow_right"/>
+                    <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                        android:text="Research and Follow-Up - Follow-up is conducted to determine if the individual is adequately developing in his placement and if the opportunities presented are appropriate for him. Probationary students and those with low grades are followed up individually. They are assisted in identifying the causes of their poor academic performance. This service essentially helps them develop attitudes and necessary skills to be able to cope with their academic load."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

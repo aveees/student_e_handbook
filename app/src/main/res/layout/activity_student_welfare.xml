@@ -28,6 +28,321 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- STUDENT WELFARE Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/student_welfare_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT WELFARE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Paragraph Text -->
+                <TextView
+                    android:id="@+id/student_welfare_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The Office of Student Welfare Services pertains to the provision of basic services and programs that guarantee relevant, efficient, and effective support and assistance to the well-being of all students. Under the aegis of the Office of Student Affairs and Services (OSAS), the Office of Student Welfare (OSW) is responsible for enriching programs on guidance and counseling, career development and student internship, scholarship and financial assistance, and student housing integral to the academic and community life of all students.\n\nThe OSW is overseen by a director whose main function is to deliver quality services to all students through planning and implementation of requisite policies on student welfare programs and activities; monitoring and evaluating the performance of specialized offices within the OSW cluster; and collaborating with the heads of these specialized offices." />
+
+            </LinearLayout>
+
+
+            <!-- DUTIES AND FUNCTIONS OF OSW Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/osw_duties_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DUTIES AND FUNCTIONS OF THE OFFICE OF STUDENT WELFARE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Bullet 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Assist the Dean of Student Affairs and Services (SAS) in the planning, preparation, and implementation of student welfare program and activities."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Design programs that provide quality basic services that will ensure the well-being of students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Direct, monitor and evaluate regularly the services and programs of the Guidance and Counselling Services, Career Development and Internship Services and Placement and Public Employment Office."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Formulate policy on Student Welfare in collaboration with the student welfare heads for better up-keeping of student welfare program."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Attend to the daily concerns and issues of the different heads of the student welfare units."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinate to all academic heads the other needs of students which are relevant to student welfare."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Conduct regular meeting with student welfare units."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 8 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Oversee the integration of various programs of student welfare units that will enrich the academic and community life of all students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 9 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Report directly to the dean of SAS all concerns that requires immediate action."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 10 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Hold co-chairmanship to various committees that are related to student welfare."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 11 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Perform other related functions as may be directed by the Office of the Student Affairs and Services."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <!-- RecyclerView for section cards -->
             <androidx.recyclerview.widget.RecyclerView
@@ -37,7 +352,6 @@
                 android:nestedScrollingEnabled="false"
                 android:clipToPadding="false"
                 android:paddingBottom="16dp"/>
-
         </LinearLayout>
 
 

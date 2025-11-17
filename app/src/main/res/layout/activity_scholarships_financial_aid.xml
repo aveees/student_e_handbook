@@ -28,6 +28,1444 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- SCHOLARSHIPS AND FINANCIAL ASSISTANCE Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/scholar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCHOLARSHIPS AND FINANCIAL ASSISTANCE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Text with paragraph spacing -->
+                <TextView
+                    android:id="@+id/scholar_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The Office of Scholarship and Financial Assistance is the primary venue of the university to help undergraduate students reach the goal of graduation by providing scholarships, grants and financial assistance services to intellectually qualified, underprivileged, indigent but deserving students.\n\n
+The office classifies the difference between scholarships, grants and financial assistance such as:\n\n
+Scholarships are awarded based on specific criteria for students. They should qualify on a stringent process required by the grantee. It is necessary that the awardees should maintain and manifest consistent excellent academic standing to uphold to the scholarship. It usually reflects the values, goals and purposes of the grantee.\n\n
+Grants are usually conditional upon certain qualifications as to the purpose, upholding of specified standards, or a proportional contribution by the grantee or other grantor(s). A grant or payment is made to support a student’s education, awarded on the basis of academic or other achievement such as sports, cultural inclination and arts.\n\n
+Financial Assistance or Financial Aids are given by a company or an organization for the purchase of its shares or those of its holding companies. It is in compliance with the company’s corporate social responsibility like: Funding of science, the provision of financing for scientific research projects. Welfare, financial aid by primarily governmental institutions or charitable organizations to individuals in need, and a Subsidy/Student financial aid funding intended to help students pay educational expenses." />
+            </LinearLayout>
+            <!-- FUNCTIONS OF THE OFFICE SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/functions_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FUNCTIONS OF THE OFFICE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- BULLET 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Helps provide access to quality education to poor but deserving students through a continuing scholarship program."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Prepares and implements annual work plans for testing and screening of student-applicants for scholarship grants and financial assistance."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinates with public agencies, private entities, individuals, and NGOs for additional scholarship or financial assistance opportunities."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Develops, in coordination with donors, the criteria and procedures for selecting scholars and grantees for grants and scholarship slots."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinates with the Office of Admissions and the Guidance and Counseling Services Center in screening and selecting scholars across academic programs."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Publishes information on scholarship grants and financial assistance available for students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinates with the accounting office in providing control mechanisms over the inflow and outflow of financial assistance for students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- BULLET 8 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Keeps an updated list of scholars and grantees and regularly monitors their academic performance to ensure assistance is given to appropriate recipients."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- SERVICES OFFERED Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/services_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SERVICES OFFERED"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Text with paragraph spacing -->
+                <TextView
+                    android:id="@+id/services_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The office issue renewal forms to student grantees provided they are still
+qualified and have maintained their grades during the period of their scholarship.
+The students may apply on any type of scholarships and grants provided
+they qualify and pass the examination in any given semester. The following are
+types of scholarships, grants and financial aids categorized based on their
+specified requirements." />
+            </LinearLayout>
+
+            <!-- INSTITUTIONAL SCHOLARSHIP SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/institutional_scholarship_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INSTITUTIONAL SCHOLARSHIP"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Description -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="This scholarship offers full (100%) or partial (50%) tuition fee discount for one semester to qualified freshmen or students demonstrating good academic performance."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Valedictorians and Salutatorians may enjoy full and partial scholarships respectively, provided they graduated from a recognized secondary school and belong to a class of at least 100 students."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Full Institutional Scholarship may be availed by students with a GPA of at least 1.50 and no grade lower than 2.0 in at least 15 academic units for the preceding two semesters. Also granted to the elected Student Government President during incumbency."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Partial Institutional Scholarship may be availed by students with a GPA of at least 1.75 and no grade lower than 2.0 in at least 15 academic units for the preceding two semesters. Also available to the elected Student Government Vice President if not availing full scholarship."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="BulSU Employee Dependent: Receives 100% tuition discount, provided no failing mark is incurred. Required to submit previous semester COG, parent’s ID, and birth certificate."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Talents: Students in university talent groups like Hyper-Dynamics, Band, Lahing Kayumanggi, Saring Himig, Euphonistas, may be granted 50-100% tuition discount depending on adviser recommendation."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Varsity: Students recommended by advisers may be granted 50-100% tuition discount."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- NON-INSTITUTIONAL SCHOLARSHIP SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/non_institutional_scholarship_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NON-INSTITUTIONAL SCHOLARSHIP"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Bullet 1: Barangay Scholarships -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Barangay Scholarships: Sons and daughters of elective Barangay officials are granted 100% tuition discount. Required documents: DILG certification of parent’s post and duration, latest COG. Children of Barangay Tanod not included."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 2: Government Entities -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:text="2."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Government Entities:"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <!-- Sub-bullets as arrows -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="CHED: Safe Grant (P7,500), Full Merit (P15,000), Partial/Half Merit (P7,500), Grant-in-Aid (P6,000), OTOS (P15,000)"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="DOST: Grants P9,000 per student plus book allowances every semester"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="GSIS: Full school fees and allowances to selected scholars"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="OWWA: Grants full school fees to children of OFWs earning $400 or lower"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="PVAO: Grants full school fees to selected members' children"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="AFP: Grants full school fees to children of Armed Forces workforce"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Bullet 3: House of Representatives -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="House of Representatives Financial Assistance Program: Provided by Congressmen/women and Party List Representatives. Amounts vary based on fund allocation."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 4: ESGP-PA -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="4."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="ESGP-PA: Full tuition/school fees for 4Ps beneficiaries, book allowance P2,500/semester, monthly allowance P3,500 for 10 months. Scholarships deferred if failure occurs in more than 2 subjects."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 5: Local Government Units -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="5."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Local Government Units: Financial assistance is offered through local education programs. Interested students should apply at their Local Executive offices."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 6: Private Scholarships -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="6."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Private Scholarships: Administered by the University for poor but deserving students. Minimum GPA of 2.0 in at least 15 units required. List of benefactors available at SFA office."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/application_procedure_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APPLICATION PROCEDURE"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Bullet 1: Eligibility Criteria -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:text="1."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Eligibility Criteria:"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <!-- Sub-bullets -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Be currently admitted to Bulacan State University"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Submit all admission documents"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Latest Certification of Grades / Form 138"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Indigent Certificate from Barangay"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Proof of billing"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_arrow_right" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Certificate of Good Moral Character"
+                                android:textColor="#064c24"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/montserrat_medium"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Bullet 2: Types of Test -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <!-- Main Bullet -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:text="2."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Two types of test to the applicant:"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <!-- Sub-bullets -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <!-- a. Essay Type -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/ic_arrow_right" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="a. Essay Type (essence of scholarship)"
+                                    android:textColor="#064c24"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/montserrat_medium"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/ic_arrow_right" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="The essay form of test is to be scored 20 points maximum, validating such with the applicant’s answers."
+                                    android:textColor="#064c24"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/montserrat_medium"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- b. Objective Type -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/ic_arrow_right" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="b. Objective Type (multiple choice academic related questions)"
+                                    android:textColor="#064c24"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/montserrat_medium"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/ic_arrow_right" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="The objective type of test is converted into quartile, for a maximum of 20 points each:"
+                                    android:textColor="#064c24"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/montserrat_medium"/>
+                            </LinearLayout>
+
+                            <!-- Nested Criteria -->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="4dp">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp">
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_marginRight="8dp"
+                                        android:src="@drawable/ic_arrow_right" />
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Personality: 20 points, including confidence and smartness in answering interview questions."
+                                        android:textColor="#064c24"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_medium"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp">
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_marginRight="8dp"
+                                        android:src="@drawable/ic_arrow_right" />
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Values: 20 points, including humility, sincerity, truthfulness, nationalism."
+                                        android:textColor="#064c24"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_medium"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp">
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_marginRight="8dp"
+                                        android:src="@drawable/ic_arrow_right" />
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Reasoning: 20 points, evaluated through tricky questions like 'What would you do if you’re given the scholarship?'"
+                                        android:textColor="#064c24"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_medium"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_marginRight="8dp"
+                                        android:src="@drawable/ic_arrow_right" />
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Economic Condition: 20 points, considering electric bill, number of siblings, home ownership, parent’s occupation."
+                                        android:textColor="#064c24"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/montserrat_medium"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!-- Bullet 3 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="The office shall check the tests and call the applicant for interview to validate information."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 4 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="4."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Grades check: as much as possible not lower than 80% to be considered for endorsement."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 5 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="5."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="When all criteria are satisfied, applicants will be endorsed to prospective benefactor(s)."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 6 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="6."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="If benefactor approves, MOA or MOU is executed and forwarded to accounting office."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 7 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="7."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Grantee affixes scholarship info in COR and proceeds to accounting office."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Student Assistantship Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/student_assistantship_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT ASSISTANTSHIP (S.A.)"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Main description -->
+                <TextView
+                    android:id="@+id/student_assistantship_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="textStart"
+                    android:text="The University provides opportunities to students who have the time and skills to work as student assistants in various offices and earn wages at student rate. Interested students may file their application letter for student assistantship to the Office of Scholarships and Financial Assistance. To qualify for student assistantship, applicant must:" />
+
+                <!-- Sub-bullets -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp">
+
+                    <!-- Bullet a -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Have no failing grade or incomplete mark in the previous semester."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium" />
+                    </LinearLayout>
+
+                    <!-- Bullet b -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Pass the pre-hiring screening requirements of the office requesting the services of student assistant."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium" />
+                    </LinearLayout>
+
+                    <!-- Bullet c -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Submit duly signed parental consent."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
