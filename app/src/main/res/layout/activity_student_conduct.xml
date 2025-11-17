@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".StudentConductActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area using NestedScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Content TextView with styled background -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The University pursues its vision and mission and therefore places great emphasis on the values
+of respect for the dignity and worth of individuals and the development of character. The University
+promotes the rights of every student to a safe and conducive environment for both online and
+face-to-face settings. The University recognizes every person’s right to data privacy and virtual safety in
+the advent of online classes. The University also acknowledges the existence of procedural and
+substantive reforms in addressing students’ issues, grievances, and misbehavior committed during online
+classes. Therefore, the University clearly presents student rights and responsibilities and establishes
+disciplinary procedures to ensure that all members of the University community benefit from the
+promotion of these values, both for the online and face-to-face set-up."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Thus the Student Policy and Program Development Office under the Office of the Vice President
+for Academic Affairs in consultation with the Office of Student Affairs and Services is proposing this
+enhanced BulSU Guidelines on Student Conduct, Discipline, and Grievance Intervention."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <!-- RecyclerView for section cards -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>

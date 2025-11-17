@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".GeneralPoliciesActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Your Text Content Goes Here -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The University shall establish a student discipline system to maintain peace and order within the academic community and to assist in the character formation of its students. The system ensures the observance of the principles of due process and justice."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="The rules of conduct and discipline for students of the University are promulgated and adopted to guide them in their behavior, both on and off campus. This is in keeping with the generally accepted standards of proper conduct and the good name of the University."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>

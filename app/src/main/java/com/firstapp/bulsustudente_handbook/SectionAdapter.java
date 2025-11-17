@@ -66,6 +66,36 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionV
                     intent = new Intent(context, StudentsOrientationActivity.class);
                     break;
 
+                // =============================================
+                // ✅ NEW: STUDENT CONDUCT & DISCIPLINE SECTIONS
+                // =============================================
+                case "General Policies":
+                    intent = new Intent(context, GeneralPoliciesActivity.class);
+                    break;
+                case "Students' Conduct and Responsibilities":
+                    // TODO: Create StudentsConductResponsibilitiesActivity.class
+                    // intent = new Intent(context, StudentsConductResponsibilitiesActivity.class);
+                    break;
+                case "Disciplinary Sanctions & Penalties":
+                    // TODO: Create DisciplinarySanctionsPenaltiesActivity.class
+                    // intent = new Intent(context, DisciplinarySanctionsPenaltiesActivity.class);
+                    break;
+                case "Grounds for Disciplinary Sanctions":
+                    // TODO: Create GroundsForSanctionsActivity.class
+                    // intent = new Intent(context, GroundsForSanctionsActivity.class);
+                    break;
+                case "Administrative Bodies Governing Student Disciplinary Proceedings, Their Compositions, Functions and Jurisdiction":
+                    // TODO: Create AdminBodiesDisciplineActivity.class
+                    // intent = new Intent(context, AdminBodiesDisciplineActivity.class);
+                    break;
+                case "Rules of Procedure":
+                    // TODO: Create RulesOfProcedureActivity.class
+                    // intent = new Intent(context, RulesOfProcedureActivity.class);
+                    break;
+                case "Students’ Grievance Procedure":
+                    // TODO: Create StudentsGrievanceProcedureActivity.class
+                    // intent = new Intent(context, StudentsGrievanceProcedureActivity.class);
+                    break;
 
                 // 🔥 Student Affairs and Services
                 case "THE OFFICE OF THE DEAN\nFOR STUDENT AFFAIRS AND SERVICES":
