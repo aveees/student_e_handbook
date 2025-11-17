@@ -74,7 +74,14 @@
             android:exported="false" />
         <activity
             android:name=".StudentAffairsActivity"
-            android:exported="false" /> <!-- Splash screen as launcher -->
+            android:exported="false" />
+        <activity
+            android:name=".StudentConductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPoliciesActivity"
+            android:exported="false" />
+        <!-- Splash screen as launcher -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
