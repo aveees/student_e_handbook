@@ -81,6 +81,20 @@
         <activity
             android:name=".GeneralPoliciesActivity"
             android:exported="false" />
+        <activity
+            android:name=".StudentsConductResponsibilitiesActivity"
+            android:exported="false" />
+        <!-- in AndroidManifest.xml, inside the <application> tag -->
+        <activity android:name=".DisciplinarySanctionsPenaltiesActivity"
+            android:exported="false" />
+        <activity android:name=".GroundsForSanctionsActivity"
+            android:exported="false" />
+        <activity android:name=".AdminBodiesDisciplineActivity"
+            android:exported="false" />
+        <activity android:name=".RulesOfProcedureActivity"
+            android:exported="false" />
+        <activity android:name=".StudentsGrievanceProcedureActivity"
+            android:exported="false" />
         <!-- Splash screen as launcher -->
         <activity
             android:name=".SplashActivity"

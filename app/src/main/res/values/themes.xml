@@ -5,5 +5,113 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- in res/values/themes.xml -->
+
+    <!-- Style for Table Header Cells -->
+    <style name="TableHeaderCell" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/table_cell_header_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- White text for header -->
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="OffenseHeaderCell" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <!-- CHANGE THIS to match_parent -->
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E0E0E0</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">#064c24</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <!-- Use center to align both horizontally and vertically -->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style for Table Data Cells -->
+    <style name="TableDataCell" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <!-- CHANGE THIS to match_parent -->
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/table_cell_bg</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">#064c24</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <!-- CHANGE THIS to center_vertical to align the text vertically -->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style for the Card containing each offense table -->
+    <style name="OffenseCard" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- Style for the title of each offense -->
+    <style name="OffenseTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#064c24</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!-- Style for the TableLayout inside each card -->
+    <style name="OffenseTable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:stretchColumns">*</item>
+    </style>
+
+    <!-- Style for bold subheadings like 'Composition:' -->
+    <style name="SubHeading" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#064c24</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Style for sub-items like 'Members:' -->
+    <style name="SubHeading.SubItem">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- Style for regular list item text -->
+    <style name="ListItemText" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#064c24</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Style for indented list items -->
+    <style name="ListItemText.Inner">
+        <item name="android:layout_marginStart">32dp</item>
+    </style>
+
+    <style name="ListItemText.Indented">
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
     <style name="Theme.BulSUStudentEHandbook" parent="Base.Theme.BulSUStudentEHandbook" />
 </resources>
