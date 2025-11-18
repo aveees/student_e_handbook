@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#DFF0D8"
+    tools:context=".CbaProgramsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card 1: Bachelor of Science in Business Administration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Program Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor of Science in Business Administration"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#064c24"
+                android:textSize="20sp" />
+
+            <!-- Subheading for Majors -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Majors:"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#0a6b32"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Major 1: Financial Management -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Financial Management"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Major 2: Marketing Management -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Marketing Management"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- ADDED: Program Description for BSBA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The BSBA program prepares students for a career in corporate management and business operations. It provides a comprehensive understanding of business functions, including finance, marketing, human resources, and strategic management, equipping graduates with the skills to lead and innovate in a competitive global market."
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Card 2: Bachelor of Science in Entrepreneurship -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners"
+            android:padding="20dp">
+
+            <!-- Program Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor of Science in Entrepreneurship"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#064c24"
+                android:textSize="20sp" />
+
+            <!-- ADDED: Program Description for Entrepreneurship -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The BSE program is designed for aspiring innovators and business owners. It focuses on developing the skills needed to start, manage, and grow a successful enterprise. The curriculum covers idea generation, business planning, venture financing, and product development, fostering a mindset of creativity and strategic risk-taking."
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#DFF0D8"
+    tools:context=".CoedProgramsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card 1: Bachelor of Secondary Education -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Program Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor of Secondary Education"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#064c24"
+                android:textSize="20sp" />
+
+            <!-- Program Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Bachelor of Secondary Education (BSED) program is designed to equip future educators with the knowledge and skills to effectively teach at the secondary level. The curriculum focuses on a deep understanding of a specific subject area, combined with proven pedagogical strategies, classroom management techniques, and principles of adolescent development."
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Subheading for Majors -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Majors:"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#0a6b32"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Major 1: English -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• English"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Major 2: Mathematics -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Mathematics"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Major 3: Science -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Science"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Major 4: Social Studies -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Social Studies"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <!-- You can add cards for other COED programs (e.g., BEED) here -->
+
+    </LinearLayout>
+</ScrollView>

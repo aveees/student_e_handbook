@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#DFF0D8"
+    tools:context=".CiteProgramsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card for BS in Information Technology -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners"
+            android:padding="20dp">
+
+            <!-- Program Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor of Science in Information Technology"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#064c24"
+                android:textSize="20sp" />
+
+            <!-- Subheading for Majors -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Majors:"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#0a6b32"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Major 1: Web and Mobile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Web and Mobile Application Development"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Major 2: Data Analytics -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Data and Business Analytics"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Major 3: Infrastructure Systems -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Infrastructure and Systems"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Program Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The BSIT program includes the study of the utilization of both hardware and software technologies involving planning, installing, customizing, operating, managing and administering, and maintaining information technology infrastructure that provides computing solutions to address the needs of an organization. The program prepares graduates to address various user needs involving the selection, development, application, integration and management of computing technologies within an organization."
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+
+        <!-- You can add more cards for other CITE programs here -->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#DFF0D8"
+    tools:context=".CitProgramsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card: Bachelor of Science in Industrial Technology -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners"
+            android:padding="20dp">
+
+            <!-- Program Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor of Science in Industrial Technology"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#064c24"
+                android:textSize="20sp" />
+
+            <!-- Program Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Bachelor of Science in Industrial Technology program is designed to prepare students for management and supervisory roles in the technology and manufacturing sectors. The curriculum integrates practical skills with management principles, focusing on the application of technology, process optimization, and quality control to solve industrial challenges."
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Subheading for Majors -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Majors:"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#0a6b32"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Major 1: Automotive Technology -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Automotive Technology"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Major 2: Electrical Technology -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Electrical Technology"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Major 3: Electronics Technology -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Electronics Technology"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Major 4: Food Technology -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Food Technology"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Computer Technology"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:textColor="#0a6b32"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <!-- You can add more CIT program cards here -->
+
+    </LinearLayout>
+</ScrollView>

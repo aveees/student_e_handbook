@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".ProgramFacultyActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Card 1: College of Business Administration -->
+            <RelativeLayout
+                android:id="@+id/card_cba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:padding="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Left Side Content -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/logo_placeholder_cba">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="College of Business Administration"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#064c24"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read More..."
+                        android:fontFamily="@font/montserrat_medium_italic"
+                        android:textColor="#0a6b32"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Right Side Logo Placeholder -->
+                <ImageView
+                    android:id="@+id/logo_placeholder_cba"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/cba_1"/>
+            </RelativeLayout>
+
+            <!-- Card 2: College of Education -->
+            <RelativeLayout
+                android:id="@+id/card_coed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:padding="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Left Side Content -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/logo_placeholder_coed">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="College of Education"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#064c24"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read More..."
+                        android:fontFamily="@font/montserrat_medium_italic"
+                        android:textColor="#0a6b32"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Right Side Logo Placeholder -->
+                <ImageView
+                    android:id="@+id/logo_placeholder_coed"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/coed_1"/>
+            </RelativeLayout>
+
+            <!-- Card 3: College of Industrial Technology -->
+            <RelativeLayout
+                android:id="@+id/card_cit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:padding="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Left Side Content -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/logo_placeholder_cit">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="College of Industrial Technology"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#064c24"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read More..."
+                        android:fontFamily="@font/montserrat_medium_italic"
+                        android:textColor="#0a6b32"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Right Side Logo Placeholder -->
+                <ImageView
+                    android:id="@+id/logo_placeholder_cit"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/cit_1"/>
+            </RelativeLayout>
+
+            <!-- Card 4: College of Information Technology and Engineering -->
+            <RelativeLayout
+                android:id="@+id/card_cite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:padding="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Left Side Content -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/logo_placeholder_cite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="College of Information Technology and Engineering"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#064c24"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read More..."
+                        android:fontFamily="@font/montserrat_medium_italic"
+                        android:textColor="#0a6b32"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Right Side Logo Placeholder -->
+                <ImageView
+                    android:id="@+id/logo_placeholder_cite"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/cite_1"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+
+</LinearLayout>

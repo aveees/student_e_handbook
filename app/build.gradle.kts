@@ -43,6 +43,8 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
+// Or a newer version
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.github.bumptech.glide:glide:4.15.1")
 

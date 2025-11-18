@@ -65,6 +65,13 @@ public class DashboardActivity extends AppCompatActivity {
             startActivity(new Intent(DashboardActivity.this, GoalsActivity.class));
         });
 
+        // Add an View.OnClickListener for the Scheduler button
+        btnScheduler.setOnClickListener(v -> {
+            // Create an Intent to start ScheduleActivity
+            Intent intent = new Intent(DashboardActivity.this, ScheduleActivity.class);
+            startActivity(intent);
+        });
+
         iconMenu = findViewById(R.id.menu_icon);
 
         iconMenu.setOnClickListener(v -> drawerLayout.openDrawer(navigationView));
