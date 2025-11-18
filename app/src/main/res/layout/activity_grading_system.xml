@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    android:orientation="vertical">
+
+    <!-- Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Grading System Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/grading_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grading System"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Instruction Text -->
+                <TextView
+                    android:id="@+id/grading_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The academic performance of the student shall be rated using the following grading system:" />
+
+                <!-- Grading Table Wrapper with border -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/table_cell_border">
+
+                    <!-- Grading Table -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*"
+                        android:layout_margin="0dp">
+
+                        <!-- Header Row -->
+                        <TableRow>
+                            <TextView
+                                android:text="GRADE"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:textColor="#064c24"
+                                android:background="@drawable/table_cell_border"/>
+                            <TextView
+                                android:text="EQUIVALENT"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:textColor="#064c24"
+                                android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <!-- Grade Rows -->
+                        <TableRow>
+                            <TextView android:text="1.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="97 – 100%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="1.25" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="94 – 96%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="1.50" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="91 – 93%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="1.75" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="88 – 90%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="2.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="85 – 87%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="2.25" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="82 – 84%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="2.50" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="79 – 81%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="2.75" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="76 – 78%" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="3.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="75% (Passed)" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="4.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="Conditional Passed" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="5.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="Failed" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="Inc." android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="Incomplete" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="D" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="Officially Dropped" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="FDA / UD" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView
+                                android:text="Failure Due to Absences / Unofficially Dropped"
+                                android:padding="8dp"
+                                android:textColor="#064c24"
+                                android:background="@drawable/table_cell_border"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="none"
+                                android:scrollHorizontally="false"
+                                android:singleLine="false"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <!-- Notes -->
+                <TextView
+                    android:id="@+id/grading_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="12dp"
+                    android:text="4.00 (Conditional Passed) indicates that there is a slight deficiency in the
+performance of the student to satisfy the minimum requirements of the course for
+him to earn the lowest passing grade of '3'. The student, in consultation with
+the subject teacher concerned, must resolve this deficiency within two (2) weeks
+after he/she received the grade; otherwise the grade automatically becomes '5.00'.
+The grade of 4.00 shall not appear in the student’s permanent records or
+transcript of records.\n\n
+
+Inc. (Incomplete) indicates that the student has been getting passing marks in all
+criteria for grading except that he lacks certain project or activity required in the
+course. The student has a grace period of one (1) year to complete the
+requirements; otherwise, 'Inc.' automatically becomes '5.00'. If the student got
+the mark of 'Inc.' in a prerequisite subject, he may not enroll in the subject in
+which it is a prerequisite until he has completed such prerequisite subject.\n\n
+
+D (Officially Dropped) indicates that the student officially filled a formal
+dropping form, duly signed by the respective instructor/professor, dean, and the
+university registrar.\n\n
+
+FDA or UD (Failure Due to Absences or Unofficially Dropped) indicates that
+the student discontinued attending the class without notice to the teacher
+concerned, resulting in failure or unofficially dropping the subject."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Logos at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Bustos Logo"
+            android:src="@drawable/bustos_logo" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Eagles Logo"
+            android:src="@drawable/eagles_logo" />
+    </LinearLayout>
+
+</LinearLayout>

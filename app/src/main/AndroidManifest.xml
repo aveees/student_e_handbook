@@ -13,6 +13,60 @@
         android:theme="@style/Theme.BulSUStudentEHandbook"
         tools:targetApi="31">
         <activity
+            android:name=".StudentRecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GraduationAwardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommencementExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GraduationRequirementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoldGearAwardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcademicDelinquencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransparencyCorrectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GradingSystemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExaminationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaximumResidencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveOfAbsenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AbsencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DroppingSubjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialSpecialClassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubstitutionSubjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeAcademicLoadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdmissionRequirementActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentInsuranceClaimActivity"
             android:exported="false" />
         <activity
@@ -80,8 +134,7 @@
             android:exported="false" />
         <activity
             android:name=".GeneralPoliciesActivity"
-            android:exported="false" />
-        <!-- Splash screen as launcher -->
+            android:exported="false" /> <!-- Splash screen as launcher -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"

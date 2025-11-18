@@ -185,6 +185,61 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionV
                case "STUDENT REWARDS AND INCENTIVES":
                     intent = new Intent(context, StudentRewardIncentivesActivity.class);
                     break;
+
+                case "A. ADMISSION REQUIREMENT":
+                    intent = new Intent(context, AdmissionRequirementActivity.class);
+                    break;
+                case "B. CHANGE OF ACADEMIC LOAD":
+                    intent = new Intent(context, ChangeAcademicLoadActivity.class);
+                    break;
+                case "C. SUBSTITUTION OF SUBJECTS":
+                    intent = new Intent(context, SubstitutionSubjectsActivity.class);
+                    break;
+                case "D. TUTORIAL AND SPECIAL CLASSES":
+                    intent = new Intent(context, TutorialSpecialClassesActivity.class);
+                    break;
+                case "E. DROPPING OF SUBJECTS":
+                    intent = new Intent(context, DroppingSubjectsActivity.class);
+                    break;
+                case "F. ATTENDANCE":
+                    intent = new Intent(context, AttendanceActivity.class);
+                    break;
+                case "G. ABSENCES":
+                    intent = new Intent(context, AbsencesActivity.class);
+                    break;
+                case "H. LEAVE OF ABSENCE":
+                    intent = new Intent(context, LeaveOfAbsenceActivity.class);
+                    break;
+                case "I. MAXIMUM RESIDENCY REQUIREMENT":
+                    intent = new Intent(context, MaximumResidencyActivity.class);
+                    break;
+                case "J. EXAMINATIONS":
+                    intent = new Intent(context, ExaminationsActivity.class);
+                    break;
+                case "K. GRADING SYSTEM":
+                    intent = new Intent(context, GradingSystemActivity.class);
+                    break;
+                case "L. TRANSPARENCY AND CORRECTION OF GRADES":
+                    intent = new Intent(context, TransparencyCorrectionActivity.class);
+                    break;
+                case "M. ACADEMIC DELINQUENCY":
+                    intent = new Intent(context, AcademicDelinquencyActivity.class);
+                    break;
+                case "N. GOLD GEAR AWARDS":
+                    intent = new Intent(context, GoldGearAwardsActivity.class);
+                    break;
+                case "O. GRADUATION REQUIREMENTS":
+                    intent = new Intent(context, GraduationRequirementsActivity.class);
+                    break;
+                case "P. COMMENCEMENT EXERCISES":
+                    intent = new Intent(context, CommencementExercisesActivity.class);
+                    break;
+                case "Q. GRADUATION AWARDS":
+                    intent = new Intent(context, GraduationAwardsActivity.class);
+                    break;
+                case "R. STUDENT RECORDS":
+                    intent = new Intent(context, StudentRecordsActivity.class);
+                    break;
            }
 
 
