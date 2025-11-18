@@ -161,7 +161,7 @@
                         </TableRow>
 
                         <TableRow>
-                            <TextView android:text="FDA / UD" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                            <TextView android:text="FDA / UD\n" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
                             <TextView
                                 android:text="Failure Due to Absences / Unofficially Dropped"
                                 android:padding="8dp"

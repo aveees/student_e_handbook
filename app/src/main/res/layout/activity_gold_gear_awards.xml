@@ -27,6 +27,375 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- GOLD GEAR AWARDS SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/awards_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold Gear Awards"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/awards_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="The Gold Gear Awards is an annual recognition program for students for the formal awarding of academic excellence, co-curricular, and extra-curricular awards. The Office of the Dean for Student Affairs and Services, in coordination with different academic units of the University, shall be responsible for the conduct of this program." />
+            </LinearLayout>
+
+            <!-- ACADEMIC EXCELLENCE SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/academic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Excellence Award"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Paragraph -->
+                <TextView
+                    android:id="@+id/academic_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="These awards shall be based solely on academic excellence. Candidates must be officially enrolled with a minimum of 15 academic units or as prescribed in the regular curriculum during the last two consecutive semesters. Only students from 2nd year to senior year shall be entitled." />
+
+                <!-- Bullet 1 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="President’s List Award: GPA 1.20–1.00, no grade lower than 2.0 in any subject."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+
+                <!-- Bullet 2 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Dean’s List Award: GPA 1.75–1.21, no grade lower than 2.0 in any subject."
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- CO-CURRICULAR AND EXTRA-CURRICULAR SECTION -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/extracurricular_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Co-Curricular and Extra-Curricular Awards"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Paragraph -->
+                <TextView
+                    android:id="@+id/extracurricular_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="The University shall award non-academic honors and recognition to deserving students based on approved criteria and standards set by the Committee on Awards. Candidates must have no disciplinary record in the current academic year." />
+
+                <!-- Competition Winners -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Competition Winners (for duly accredited competitions):"
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp" />
+
+                    <!-- Bullet Levels -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="International Level: 1st to 5th place winners"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="National Level: 1st to 3rd place winners"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Regional Level: 1st and 2nd place winners"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Provincial/Division Level: 1st place winners"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Extra-Curricular Awards -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Extra-Curricular Awards:"
+                        android:textColor="#064c24"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Journalists of the Year"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Male and Female Athletes"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Male and Female Performing Artists"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Student Government Leaders"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Student Organizations Leaders"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
