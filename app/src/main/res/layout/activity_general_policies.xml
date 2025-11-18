@@ -27,30 +27,175 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
+            android:padding="16dp"
             android:background="@drawable/rounded_corners">
 
-            <!-- Your Text Content Goes Here -->
+            <!-- Introductory Text -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The University shall establish a student discipline system to maintain peace and order within the academic community and to assist in the character formation of its students. The system ensures the observance of the principles of due process and justice."
+                android:layout_marginBottom="20dp"
+                android:text="In the implementation of the rules and regulations on student conduct and discipline, the University is guided by the following policies:"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Policy 1 -->
+            <TextView
+                android:id="@+id/policy_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="1. All matters pertaining to student conduct and discipline shall be governed by the pertinent provisions of the University Code, the Education Act of 1982 and other general and special laws in relation to education."
                 android:textColor="#064c24"
                 android:textSize="14sp"
                 android:fontFamily="@font/montserrat_medium"
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"/>
 
+            <!-- Policy 2 -->
             <TextView
+                android:id="@+id/policy_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="The rules of conduct and discipline for students of the University are promulgated and adopted to guide them in their behavior, both on and off campus. This is in keeping with the generally accepted standards of proper conduct and the good name of the University."
+                android:layout_marginBottom="16dp"
+                android:text="2. Following the principle of en loco parentis, the University has the right to act in the best interests of the students as it sees fit through all persons charged with the supervision of students, which shall be deemed persons in authority and should, therefore, be accorded due respect and protection (Art. 153 (3), Revised Penal Code, as amended by PD 299, Sept. 19, 1973 and Education Act of 1982)."
                 android:textColor="#064c24"
                 android:textSize="14sp"
                 android:fontFamily="@font/montserrat_medium"
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"/>
+
+            <!-- Policy 3 -->
+            <TextView
+                android:id="@+id/policy_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="3. All University officials, students, faculty members, staff and security personnel are duly protected under the mandate of the Data Privacy Act (Republic Act No. 10173), Anti-Cybercrime Law (Republic Act No. 10175) and Safe Space Act (Republic Act No. 11313)."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Policy 4 -->
+            <TextView
+                android:id="@+id/policy_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="4. All University officials, faculty members, staff, and security personnel are authorized to enforce and request compliance to all University rules and regulations."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Policy 5 -->
+            <TextView
+                android:id="@+id/policy_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="5. The investigation and disposition of student disciplinary cases shall follow the proceedings set forth by these guidelines."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Policy 6 -->
+            <TextView
+                android:id="@+id/policy_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="6. All respondents to any case shall enjoy the following rights:"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Sub-list for Policy 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:id="@+id/policy_6a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="a. To be presumed innocent unless otherwise proven with substantial evidence;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="b. To be subjected to any disciplinary penalty only after the requirements of due process shall have been fully complied with;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="c. To be penalized only on the basis of substantial evidence, the burden of proof being with the person filing the charge;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="d. To be penalized only on the basis of evidence presented and of which the respondent had been properly notified and given the opportunity to rebut;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="e. To defend him/herself personally or by a counsel/representative of his own choice;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="f. To invoke his/her right against self-incrimination and data privacy;"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView
+                    android:id="@+id/policy_6g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="g. Pending final decision on the charges, to enjoy all rights and privileges of a student, unless a preventive suspension has been promulgated against him/her."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

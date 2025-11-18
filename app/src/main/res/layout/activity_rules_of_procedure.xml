@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".RulesOfProcedureActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Main Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VI. RULES OF PROCEDURE"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:text="The following Rules shall govern the procedure in addressing complaints about violations of these Guidelines and other University policies. These Rules shall be liberally construed in favor of the best welfare of the student and restorative justice."
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Rule 1 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 1. Complaint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule1_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. A complaint shall be written and formal statements of facts and allegations against any student-respondent, specifically stating the acts of offense/s, duly signed by the complainant. A sample complaint is attached in these Guidelines and marked as &quot;Complaint Form.&quot; If the student-complainant is a minor, the parent/guardian shall also sign the complaint."/>
+
+            <TextView
+                android:id="@+id/rop_rule1_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. The complainant shall specifically name all the persons allegedly responsible for the violation. It shall be filed with and received by the College Secretary, who must call the attention of the College SDEC. The SDEC shall decide whether the complaint is prima facie sufficient in form and in substance, at least three (3) days from the receipt of the complaint."/>
+
+            <TextView
+                android:id="@+id/rop_rule1_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. A complaint is sufficient in form and in substance if it states the name/s of the student-respondent/s, the acts or omissions complained of, the name of the offended party, the approximate date of the commission of the offense, the place where the offense was committed and all the possible pieces of evidence supporting the allegation."/>
+
+            <TextView
+                android:id="@+id/rop_rule1_sec4"
+                style="@style/ListItemText.Indented"
+                android:text="Section 4. If the SDEC finds the complaint insufficient in form and in substance, the complaint shall be dismissed. If the complainant does not agree with the findings of SDEC, he/she can file an appeal with the Board of Student Discipline, within five (5) days after the dismissal. A sample appeal form is attached in these Guidelines and marked as “Appeal Form.&quot;"/>
+
+            <!-- Rule 2 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 2. Answer"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule2_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. An Answer is a formal and written document, signed by the student-respondent, setting forth his/her defenses and/or denial of the allegations in the complaint filed by the complainant. A sample answer is attached in these Guidelines and marked as “Answer Form.&quot;"/>
+
+            <TextView
+                android:id="@+id/rop_rule2_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. If the College SDEC finds the complaint sufficient in form and in substance, the SDEC shall send an electronic copy of the complaint to the student-respondent with an instruction to file an answer within the reglementary period. The student-respondent shall have five (5) days within which to file his/her Answer, without any extension. The Answer shall state the name of the student-respondent, his/her defenses and signed by him/her. If the student-respondent is a minor, it must also be signed by his/her parent/guardian."/>
+
+            <TextView
+                android:id="@+id/rop_rule2_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. If the College SDEC finds the Answer meritorious, the complaint shall be dismissed, without prejudice on the part of the student-complainant to file an Appeal based on Section 4, Rule 1 of these Guidelines."/>
+
+            <TextView
+                android:id="@+id/rop_rule2_sec4"
+                style="@style/ListItemText.Indented"
+                android:text="Section 4. If the College SDEC finds the answer insufficient to overcome the allegations of the complaint, an informal hearing shall be set by the Committee within three (3) days after its decision."/>
+
+            <TextView
+                android:id="@+id/rop_rule2_sec5"
+                style="@style/ListItemText.Indented"
+                android:text="Section 5. If the student-respondent failed to file an answer, the College SDEC shall make its findings and recommendations based on the complaint and shall file the same with the Board of Student Discipline. The Board shall review the recommendations and shall impose the appropriate penalty based on the gravity of the offense and the express provisions of these Guidelines, with finality. Appeal on the findings of the Board shall only be entertained if the imposable penalty is dismissal or expulsion. The appeal shall be filed with the Office of the Executive Vice President within ten (10) days after the promulgation of the decision."/>
+
+
+            <!-- Rule 3 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 3. Hearing"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. A hearing with the College SDEC is necessary if the Answer filed by the student-respondent failed to overcome the allegations in the complaint or when there are issues of facts needed to be settled."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. A hearing shall be informal, private, for clarificatory purposes or for a possible amicable settlement. The hearing shall be done virtually, in any online meeting platform available or accessible for all parties concerned. Notices and invitation links for the informal hearing, including relevant matters and issues to be settled, shall be sent to all parties, witnesses, and committee members at least two (2) days before the scheduled hearing. All parties present shall be duly protected by the mandate of RA 10173 or the Data Privacy Act of 2012."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. Present in the hearing shall be: (1) all members of the College SDEC, (2) the parties concerned including parents/guardians, (3) the witnesses, and (4) legal counsel if any."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec4"
+                style="@style/ListItemText.Indented"
+                android:text="Section 4. If parties concerned will not be available on the scheduled date, they shall notify the College SDEC, through the College Secretary, of their absence and the reason. Another notice and invitation link shall be sent for a rescheduled hearing."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec5"
+                style="@style/ListItemText.Indented"
+                android:text="Section 5. The hearing must be administrative, not criminal, and for clarificatory purposes. Both parties shall be heard including presenting and cross-examining evidence and witnesses."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec6"
+                style="@style/ListItemText.Indented"
+                android:text="Section 6. If the student-respondent fails to appear without justifiable cause, defenses shall be based only on the submitted Answer."/>
+
+            <TextView
+                android:id="@+id/rop_rule3_sec7"
+                style="@style/ListItemText.Indented"
+                android:text="Section 7. If parties reach amicable settlement, a report will be made and kept by the College SDEC. If not, the Committee shall decide the penalty, with the majority and the Chairperson required for decision validity. The decision shall be in writing, summarizing facts and recommended penalty, signed by the concurring members."/>
+
+
+            <!-- Rule 4 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 4. Procedure in the Board of Student Discipline"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. The BSD has automatic, exclusive, appellate jurisdiction over all decisions and recommendations of the College SDEC, except for cases under Section 4 Rule 1, where appeal shall be filed by the complainant."/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. The BSD shall convene within five days from receipt of SDEC findings and recommendations or from filing an Appeal under Section 4 Rule 1. Majority of all members is necessary for decision validity."/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. Decisions shall be written, stating the Board's findings, imposable penalty or dismissal reason, signed by concurring members."/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec4"
+                style="@style/ListItemText.Indented"
+                android:text="Section 4. Any party may file a Motion for Reconsideration within five (5) days of receipt of Board decision. If no motion filed or motion denied, decision is final and executory."/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec5"
+                style="@style/ListItemText.Indented"
+                android:text="Section 5. Once final, BSD shall prepare a report and inform concerned parties of penalty. Colleges and teachers handling affected students shall be duly informed."/>
+
+            <TextView
+                android:id="@+id/rop_rule4_sec6"
+                style="@style/ListItemText.Indented"
+                android:text="Section 6. For penalties of dismissal or expulsion, BSD decisions shall automatically be reviewed by the Office of the Executive Vice President and decided upon by the Executive Vice President and relevant Chancellors."/>
+
+            <!-- Rule 5 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 5. Procedure in the Office of the Executive Vice President and the Board of Regents"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. The Executive Vice President along with Chancellors and Vice Chancellors have automatic, exclusive appellate jurisdiction over dismissal, expulsion penalties, and petitions to expunge disciplinary sanctions from permanent records."/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. Upon BSD decision to impose dismissal or expulsion, the Office of the President shall convene within ten (10) days."/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. The Executive Vice President may concur or dissent with BSD decision. If dissenting, penalty is deleted; if concurring, parties may appeal to the Board of Regents within ten (10) days."/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec4"
+                style="@style/ListItemText.Indented"
+                android:text="Section 4. Appeals to Board of Regents are governed by internal rules. Board decisions are final and not appealable."/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec5"
+                style="@style/ListItemText.Indented"
+                android:text="Section 5. If no appeal is filed, decision of Executive Vice President is final and executory, with dissemination complying with Section 5 Rule 4."/>
+
+            <TextView
+                android:id="@+id/rop_rule5_sec6"
+                style="@style/ListItemText.Indented"
+                android:text="Section 6. Petitions to expunge disciplinary sanctions from academic records are subject to reglementary periods and Executive Vice President's decision based on severity, record, and good behavior. If granted, disciplinary notations are removed from official records."/>
+
+
+            <!-- Rule 6 -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="Rule 6. Summary Procedure"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rop_rule6_sec1"
+                style="@style/ListItemText.Indented"
+                android:text="Section 1. Summary proceedings apply for cases requiring prompt action, including when:"/>
+
+            <TextView
+                android:id="@+id/rop_rule6_sec1_a"
+                style="@style/ListItemText.Inner"
+                android:text="a. The respondent admits guilt in writing or expression."/>
+            <TextView
+                android:id="@+id/rop_rule6_sec1_b"
+                style="@style/ListItemText.Inner"
+                android:text="b. The respondent is caught in the actual commission by a person in authority."/>
+            <TextView
+                android:id="@+id/rop_rule6_sec1_c"
+                style="@style/ListItemText.Inner"
+                android:text="c. Strong evidence of guilt exists."/>
+            <TextView
+                android:id="@+id/rop_rule6_sec1_d"
+                style="@style/ListItemText.Inner"
+                android:text="d. The respondent is a habitual delinquent."/>
+
+            <TextView
+                android:id="@+id/rop_rule6_sec2"
+                style="@style/ListItemText.Indented"
+                android:text="Section 2. Cases for summary proceedings shall be brought to the College SDEC for decision. Recommendations shall be in writing and submitted to BSD. Rules on Motion for Reconsideration apply."/>
+
+            <TextView
+                android:id="@+id/rop_rule6_sec3"
+                style="@style/ListItemText.Indented"
+                android:text="Section 3. BSD recommendations for dismissal or expulsion are governed by Rule 5."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>
