@@ -3,5 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Content Description for the File Icon on the left -->
+    <string name="content_description_file_icon">Icon representing a downloadable file or form</string>
+
+    <!-- Content Description for the Download Icon on the right -->
+    <string name="content_description_download_icon">Download button icon</string>
 
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="#DFF0D8"
+    tools:context=".BulsuHymnEnglishActivity">
+
+    <!-- Include the custom header -->
+    <include android:id="@+id/header_section" layout="@layout/layout_section_header"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Hail, Alma Mater!" android:textSize="22sp" android:textStyle="bold"
+                android:textColor="#064c24" android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" android:textAlignment="center" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/bulsu_hymn_english_lyrics" android:textSize="18sp"
+                android:textColor="#333333" android:lineSpacingExtra="8sp"
+                android:layout_gravity="center_horizontal" android:textAlignment="center"
+                android:paddingBottom="24dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

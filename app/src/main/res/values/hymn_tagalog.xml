@@ -1,0 +1,30 @@
+<resources>
+    <!-- ... other strings you might have in this file ... -->
+
+    <string name="bulsu_hymn_tagalog_lyrics">
+        "Bulacan State University, Ngalan mo’y natatangi\n\n"
+
+        "Buhay nami’y may kahandaang\n"
+        "Maglingkod sa Diyos at sa Bayan\n\n"
+
+        "Nililinang ang isip at kakayahan\n"
+        "O dakila ‘yong kaguruan\n\n"
+
+        "BSU, husay mo’t katanyagan\n"
+        "Itatanghal habang buhay\n\n"
+
+        "Malikhaing isip at kamay\n"
+        "Alaalang walang kapantay\n\n"
+
+        "Nakalaang aming kakayahan\n"
+        "Sa pag-unlad ng Lipunan\n\n"
+
+        "Mithi mo’y aming tungkulin\n"
+        "Salinlahi ay huhubugin\n"
+        "Ang binhi ng mabuting asal\n"
+        "Yamang ipapangaral\n\n"
+
+        "Sinisinta’ng Pamantasan\n"
+        "Dangal mo’y iingatan"
+    </string>
+</resources>

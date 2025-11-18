@@ -12,14 +12,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
 
     private final List<CardItem> cardList;
-
+    private List<CardItem> fullList; // backup full list
     public CardAdapter(List<CardItem> cardList) {
         this.cardList = cardList;
+        // IMPORTANT: create backup list for searching
+        this.fullList = new ArrayList<>(cardList);
     }
 
     @NonNull
@@ -91,6 +94,24 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         return cardList.size();
     }
 
+    // ⭐ THIS MAKES SEARCH WORK
+    public void filter(String keyword) {
+        keyword = keyword.toLowerCase().trim();
+        cardList.clear();
+
+        if (keyword.isEmpty()) {
+            cardList.addAll(fullList);
+        } else {
+            for (CardItem item : fullList) {
+                if (item.getTitle().toLowerCase().contains(keyword) ||
+                        item.getDescription().toLowerCase().contains(keyword)) {
+                    cardList.add(item);
+                }
+            }
+        }
+
+        notifyDataSetChanged();
+    }
     public static class CardViewHolder extends RecyclerView.ViewHolder {
         ImageView icon;
         TextView title, desc, readMore;

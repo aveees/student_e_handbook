@@ -38,46 +38,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
         android:orientation="vertical"
         android:gravity="center"
         android:background="@drawable/rounded_card"
         android:padding="20dp">
 
-        <!-- Toggle -->
-        <LinearLayout
-            android:id="@+id/language_toggle"
+        <!-- Material Toggle -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/languageToggle"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:orientation="horizontal"
-            android:background="@drawable/toggle_bg"
-            android:padding="2dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:padding="2dp"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedButton="@id/btnEnglish">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnEnglish"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn_selected"
                 android:text="English"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/white"
+                app:cornerRadius="24dp"
+                app:backgroundTint="@color/green_selected"
+                app:checkedIcon="@null" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnTagalog"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent"
                 android:text="Tagalog"
-                android:textColor="@android:color/darker_gray" />
-        </LinearLayout>
+                android:textColor="@color/darker_gray"
+                app:cornerRadius="24dp"
+                app:backgroundTint="@color/transparent_unselected"
+                app:checkedIcon="@null" />
 
-        <!-- Mission Text -->
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Goals Text -->
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="8dp">
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false">
 
             <TextView
                 android:id="@+id/textContent"
@@ -86,15 +92,11 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_medium"
                 android:textSize="15sp"
-                android:gravity="center"
-                android:lineSpacingExtra="4dp"
-                android:text="In the pursuit of its mission, the University gears its initiatives and efforts\n
-            towards attainment of the following goals:\n
-            1. Provide Relevant Quality and Accessible Education;\n
-            2. Provide Innovative and Responsive Research and Extension Programs;\n
-            3. BulSU in Regional Development;\n
-            4. Sound Financial Management and Resource Generation; and\n
-            5. Good Governance." />     </ScrollView>
+                android:gravity="start"
+                android:lineSpacingExtra="6dp"
+                android:justificationMode="inter_word"
+                android:text="Loading..." />
+        </ScrollView>
     </LinearLayout>
 
     <!-- Footer Logos -->

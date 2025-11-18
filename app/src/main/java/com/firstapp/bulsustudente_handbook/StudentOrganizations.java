@@ -85,40 +85,93 @@ public class StudentOrganizations extends AppCompatActivity {
 
 
         orgList.add(new StudentOrg("BBT-BC", "BulSU-Bound Tails Bustos Campus", R.drawable.bbt_logo,
-        "MR. FERNANDO F. TADEO IV", "BBT Adviser", R.drawable.ic_placeholder,
-                "LIBERTY ELAINE ALFONSO", "BBT President", R.drawable.aies_logo,
+        "MR. FERNANDO F. TADEO IV", "BBT Adviser",R.drawable.profile_circle_bg,
+                "LIBERTY ELAINE ALFONSO", "BBT President", R.drawable.profile_circle_bg,
                 "https://www.facebook.com/BBTBustos", "bulsuboundtailsbustoscampus@gmail.com"));
 
 
         orgList.add(new StudentOrg("FMSO", "Financial Management Student Organization", R.drawable.fmso_logo,
-                "MR. JOHN CLIFFORD LANDAGORA", "FMSO Adviser", R.drawable.ic_placeholder,
-                "RONNELA JANE LIBUNA", "FMSO President", R.drawable.ic_placeholder,
+                "MR. JOHN CLIFFORD LANDAGORA", "FMSO Adviser", R.drawable.profile_circle_bg,
+                "RONNELA JANE LIBUNA", "FMSO President", R.drawable.profile_circle_bg,
                 "https://www.facebook.com/FMSOBulSUBustos", "https://www.facebook.com/FMSOBulSUBustos"));
 
         orgList.add(new StudentOrg("GLEE", "Guild of Leading Elementary Educators", R.drawable.glee_logo,
-                "DR. JOSEPH BARTOLOME", "Glee Adviser", R.drawable.ic_placeholder,
-                "SHAZNAE CAO", "Glee President", R.drawable.ic_placeholder,
+                "DR. JOSEPH BARTOLOME", "Glee Adviser", R.drawable.profile_circle_bg,
+                "SHAZNAE CAO", "Glee President", R.drawable.profile_circle_bg,
                 "https://www.facebook.com/GLEE2019", "Guildofleadingelementaryeducat@gmail.com"));
 
         orgList.add(new StudentOrg("GREATS", "Guilds of Resourceful Environmental Artistic and Talented Students", R.drawable.greats_logo,
-                "MRS. REA DELA CRUZ", "GREATS Adviser", R.drawable.ic_placeholder,
-                "SARAH SANCHEZ", "GREATS President", R.drawable.ic_placeholder,
+                "MRS. REA DELA CRUZ", "GREATS Adviser", R.drawable.profile_circle_bg,
+                "SARAH SANCHEZ", "GREATS President", R.drawable.profile_circle_bg,
                 "https://www.facebook.com/bulsuOSOgreats", "greatsorg@gmail.com"));
 
 
-//        orgList.add(new StudentOrg("INSIGHT", "Innovative Network of Students in Information & Global Analytics for Holistic Transformation", R.drawable.insight_logo));
-//        orgList.add(new StudentOrg("ICPEP.SE BC", "Institute of Computer Engineers of the Philippines Student Edition - BulSU Bustos Chapter", R.drawable.icpep_logo));
-//        orgList.add(new StudentOrg("JOBS", "Junior Organization of Business StudentsJunior Organization of Business Students", R.drawable.jobs_logo));
-//        orgList.add(new StudentOrg("LIFE", "League of Impeccable Future Entrepreneurs", R.drawable.life_logo));
-//        orgList.add(new StudentOrg("LFC", "Lingua Franca Club", R.drawable.lfc_logo));
-//        orgList.add(new StudentOrg("MMSO", "Marketing Management Student Organization", R.drawable.mmso_logo));
-//        orgList.add(new StudentOrg("OMG", "Organization of Math Geniuses", R.drawable.omg_logo));
-//        orgList.add(new StudentOrg("PLUMAP", "Progresibong Lupon ng mga Mag-Aaral sa Araling Panlipunan", R.drawable.plumap_logo));
-//        orgList.add(new StudentOrg("Samo't Sari", "Samo't Sari", R.drawable.samotsari_logo));
-//        orgList.add(new StudentOrg("SCIRE", "Science Club in Real Essence", R.drawable.scire_logo));
-//        orgList.add(new StudentOrg("SFED", "Society of Future Educators", R.drawable.sfed_logo));
-//        orgList.add(new StudentOrg("SOMAPHED", "Society of Modified and Artistic Physical Educators", R.drawable.somaphed_logo));
-//        orgList.add(new StudentOrg("YTR", "Youth on the Rock", R.drawable.ytr_logo));
+        orgList.add(new StudentOrg("INSIGHT", "Innovative Network of Students in Information & Global Analytics for Holistic Transformation", R.drawable.insight_logo,
+        "DR. JENNIFER P. SOLIS", "INSIGHT Adviser", R.drawable.ic_placeholder,
+        "ELAIZA MAE RODRIGUEZ", "INSIGHT President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/profile.php?id=61580290132042", "Insightbulsubustos@gmail.com"));
+
+        orgList.add(new StudentOrg("ICPEP.SE BC", "Institute of Computer Engineers of the Philippines Student Edition - BulSU Bustos Chapter", R.drawable.icpep_logo,
+        "ENGR. RYAN NOLASCO", "ICPEP.SE Adviser", R.drawable.profile_circle_bg,
+        "SHAINE RONLAI I. CASTRO", "ICPEP.SE President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/IcpepseBustos", "icpep.sebustos@gmail.com"));
+
+
+        orgList.add(new StudentOrg("JOBS", "Junior Organization of Business StudentsJunior Organization of Business Students", R.drawable.jobs_logo,
+        "MS. MARYGOLD Q. PAULINO, MBA", "JOBS Adviser", R.drawable.profile_circle_bg,
+        "KAREN LHELLAINE N. GIRON", "JOBS President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/profile.php?id=61577012910279", "bulsu.bustos.jobs@gmail.com"));
+
+        orgList.add(new StudentOrg("LIFE", "League of Impeccable Future Entrepreneurs", R.drawable.life_logo,
+        "MR. ROMNICK S. CRUZ", "LIFE Adviser", R.drawable.profile_circle_bg,
+        "ELLIMIE M. LOPEZ", "LIFE Presdient", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/bulsubustos.life","life.of.bulsu.bustos@gmail.com"));
+
+        orgList.add(new StudentOrg("LFC", "Lingua Franca Club", R.drawable.lfc_logo,
+        "MR. KEN ROBIN D. TORRES", "LFC Adviser", R.drawable.profile_circle_bg,
+        "AL FRANCIS B. DE LEON", "LFC President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/LinguaFrancaClubBSUBustos","archiveslfc@gmail.com"));
+
+        orgList.add(new StudentOrg("MMSO", "Marketing Management Student Organization", R.drawable.mmso_logo,
+        "MR. GERVIN R. ALFONSO", "MMSO Adviser", R.drawable.profile_circle_bg,
+        "LEANNE DENISE I. SANTIAGO", "MMSO President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/BSUMMSO","marketingmngtstudentsorg@gmail.com"));
+
+        orgList.add(new StudentOrg("OMG", "Organization of Math Geniuses", R.drawable.omg_logo,
+        "MRS. REXELLA M. UMOQUIT", "OMG Adviser", R.drawable.profile_circle_bg,
+        "JANICA GENESIS N. BARCE", "OMG President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/orgofmathgen", "omg.bulsubustos@gmail.com"));
+
+
+        orgList.add(new StudentOrg("PLUMAP", "Progresibong Lupon ng mga Mag-Aaral sa Araling Panlipunan", R.drawable.plumap_logo,
+        "MR. RODEL B. TAYAO", "PLUMAP Adviser", R.drawable.profile_circle_bg,
+        "IRVIN C. QUIAMBAO","PLUMAP President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/BulsuPLUMAP","bulsu.plumapofficial@gmail.com"));
+
+        orgList.add(new StudentOrg("Samo't Sari", "Samo't Sari", R.drawable.samotsari_logo,
+        "MS. SHAIRA BERNALDEZ", "Samo't Sari Adviser", R.drawable.profile_circle_bg,
+        "JOHN ANDREI MORALES", "Samo't Sari President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/SamotSari.BulsuBustos","bulsubustos.samotsari@gmail.com"));
+
+        orgList.add(new StudentOrg("SCIRE", "Science Club in Real Essence", R.drawable.scire_logo,
+        "KATRINA ANN B. ESPINOLA", "SCIRE Adviser",R.drawable.profile_circle_bg,
+        "JUNALEEN MAE B. BONITO", "SCIRE President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/SCIREBulSUBustos","scirebustoscampus@gmail.com"));
+
+        orgList.add(new StudentOrg("SFED", "Society of Future Educators", R.drawable.sfed_logo,
+        "ALLEN S. VALERA, PH.D.", "SFED Adviser", R.drawable.profile_circle_bg,
+        "STEPHANIE VENIEZ E. RAMOS ", "SFED President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/BulSUBustosSFEd1920","sfedsocietyoffutureeducators@gmail.com"));
+
+        orgList.add(new StudentOrg("SOMAPHED", "Society of Modified and Artistic Physical Educators", R.drawable.somaphed_logo,
+        "MR. JOSEPH BERNARD P. MARCELO", "SOMAPHED Adviser", R.drawable.profile_circle_bg,
+        "ANNABEL S. PALOMO", "SOMAPHED President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/profile.php?id=100068328763247", "somaphed.bulsu@gmail.com"));
+
+        orgList.add(new StudentOrg("YTR", "Youth on the Rock", R.drawable.ytr_logo,
+        "MR SEVERINO SALVADOR", "YTR Adviser", R.drawable.profile_circle_bg,
+        "CHRISTIAN JOHN AMOR", "YTR President", R.drawable.profile_circle_bg,
+        "https://www.facebook.com/groups/675182561803498","ytrbulsubustosofficial@gmail.com"));
 
 
 
