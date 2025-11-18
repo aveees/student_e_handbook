@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFF0D8">
+    android:background="#DFF0D8"
+    android:id="@+id/main"
+    android:orientation="vertical">
 
     <!-- Fixed Header -->
     <include
@@ -25,10 +23,9 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!-- Student Handbook Development Section -->
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -40,30 +37,28 @@
 
                 <!-- Title -->
                 <TextView
-                    android:id="@+id/student_handbook_title"
+                    android:id="@+id/change_load_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Student Handbook Development"
+                    android:text="CHANGE OF ACADEMIC LOAD"
                     android:textColor="#064c24"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:layout_marginBottom="8dp"
-                    android:textAlignment="center" />
+                    android:gravity="center"/>
 
-                <!-- Description -->
+                <!-- Paragraph -->
                 <TextView
-                    android:id="@+id/student_handbook_text"
+                    android:id="@+id/change_load_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#064c24"
                     android:textSize="14sp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:lineSpacingExtra="4dp"
                     android:textAlignment="center"
-                    android:text="The University Committee on Student Handbook Development shall regularly review and appraise the provisions in the handbook. The committee shall also provide mechanisms to access the handbook for dissemination, information, and guidance of students.
-
-The Committee shall be composed of the Dean of Student Affairs and Services as Chair, Director of Student Development as Co-Chair, Director of Student Services, Director of Student Welfare, and President of Student Government as members." />
+                    android:lineSpacingExtra="4dp"
+                    android:text="Change of academic load refers to adding or changing of subjects enrolled. Any student may request to add and/or change his academic load within the first two weeks of regular classes, subject to the approval of the academic unit head concerned." />
 
             </LinearLayout>
 
@@ -75,22 +70,22 @@ The Committee shall be composed of the Dean of Student Affairs and Services as C
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
         android:gravity="center"
-        android:layout_marginVertical="10dp">
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/bustos_logo"
+            android:layout_marginEnd="16dp"
             android:contentDescription="Bustos Logo"
-            android:layout_marginEnd="16dp" />
+            android:src="@drawable/bustos_logo" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/eagles_logo"
-            android:contentDescription="Eagles Logo" />
+            android:contentDescription="Eagles Logo"
+            android:src="@drawable/eagles_logo" />
     </LinearLayout>
 
 </LinearLayout>

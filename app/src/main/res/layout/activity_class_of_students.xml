@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFF0D8">
+    android:background="#DFF0D8"
+    android:orientation="vertical">
 
     <!-- Fixed Header -->
     <include
@@ -23,25 +22,23 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <!-- Main Content -->
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_corners">
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:id="@+id/ins_text1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#064c24"
-                    android:textSize="14sp"
                     android:fontFamily="@font/montserrat_medium"
                     android:lineSpacingExtra="4dp"
                     android:text="Students in the University are classified as follows:
@@ -51,7 +48,9 @@
 \n4. A transfer student is one who had come from another recognized institution of higher learning and is officially allowed to enroll to the same or another course in the University.
 \n5. A working student has a part-time job while studying. A working student may be allowed to enroll a minimum of fifteen (15) academic units in a given term or semester.
 \n6. A foreign student is one who is not a citizen of the Philippines.
-\n7. A special student is one who is not earning credits for his academic work. A special student may enroll a maximum of nine (9) units per semester. He may enroll for a maximum of two (2) academic years. The unit head concerned may recommend exemption to this limitation, subject to the approval of the Vice President for Academic Affairs. The special student’s academic performance shall be marked “satisfactory” or “unsatisfactory.”" />
+\n7. A special student is one who is not earning credits for his academic work. A special student may enroll a maximum of nine (9) units per semester. He may enroll for a maximum of two (2) academic years. The unit head concerned may recommend exemption to this limitation, subject to the approval of the Vice President for Academic Affairs. The special student’s academic performance shall be marked “satisfactory” or “unsatisfactory.”"
+                    android:textColor="#064c24"
+                    android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
@@ -60,22 +59,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
         android:gravity="center"
-        android:layout_marginVertical="10dp">
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/bustos_logo"
+            android:layout_marginEnd="16dp"
             android:contentDescription="Bustos Logo"
-            android:layout_marginEnd="16dp" />
+            android:src="@drawable/bustos_logo" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/eagles_logo"
-            android:contentDescription="Eagles Logo" />
+            android:contentDescription="Eagles Logo"
+            android:src="@drawable/eagles_logo" />
     </LinearLayout>
 
 </LinearLayout>
