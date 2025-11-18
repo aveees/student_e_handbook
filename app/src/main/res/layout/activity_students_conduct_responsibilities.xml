@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".StudentsConductResponsibilitiesActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Introductory Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="The University believes in a happy and peaceful campus environment conducive to learning: hence, it expects that every student must, at all times exert efforts to obey the laws of the land, observe campus rules and regulations and follow the accepted norms of good social behavior and right conduct."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="All students must strive to exemplify good moral character and act in accordance with the moral values and attitudes:"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- List of Values with new, unique IDs -->
+            <TextView
+                android:id="@+id/scr_value_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="1. Self-discipline and Obedience"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="2. Honesty and Integrity"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="3. Courtesy and Modesty"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="4. Orderliness and Cleanliness"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="5. Respect for the rights of others / Tolerance"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="6. Fairness"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="7. Sense of freedom and responsibility"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="8. Cooperation"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="9. Nationalism and love of country"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/scr_value_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Godliness"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>

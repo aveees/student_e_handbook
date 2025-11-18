@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".StudentsGrievanceProcedureActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Main Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VII. STUDENTS’ GRIEVANCE PROCEDURE"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Introductory Paragraphs -->
+            <TextView
+                style="@style/ListItemText"
+                android:layout_marginBottom="12dp"
+                android:text="A student may seek to resolve any grievance if he/she believes that a member of the University community has offended and/or violated his or her rights. This person filing the grievance must be the alleged victim of unfair treatment; a grievance cannot be filed on behalf of another person."/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:layout_marginBottom="12dp"
+                android:text="The Director for Student Welfare and Development serves as the receiver and facilitator of complaints and grievances from students. The Director has neither recommendatory nor disciplinary authority, but undertakes follow-ups on complaints and grievances referred to it. The office screens and studies the complaints and determines whether they are valid or not before they are forwarded to the office concerned for appropriate actions. If there is a possibility of mediation, the office may make representations with the office concerned in order to settle the complainant or grievance amicably."/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:layout_marginBottom="24dp"
+                android:text="If the complaint is directed against the Director for Student Welfare and Development, the student may directly report to the Vice Chancellor for Student Affairs and Services who shall then take the appropriate action."/>
+
+
+            <!-- Section A: Informal Resolution -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="A. Informal Resolution"
+                android:textSize="16sp"/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:layout_marginBottom="12dp"
+                android:text="Prior to invoking the formal procedures in resolving a grievance, the student is strongly encouraged, but is not required, to discuss his or her grievance with the person alleged to have caused the grievance. The discussion should be held as soon as the student becomes aware of the act or condition that is the basis of the grievance."/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:layout_marginBottom="24dp"
+                android:text="The student may express his/her grievance in writing addressed directly to the person alleged to have caused the grievance. The person alleged to have caused the grievance must respond to the student promptly either through a dialogue or through a written response."/>
+
+
+            <!-- Section B: Formal Procedure -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="B. Formal Procedure for Complaint Processing"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/sgp_proc_1"
+                style="@style/ListItemText"
+                android:text="• A complaint is brought before the Director for Student Welfare and Development either by the Student Government office of the student alleging misconduct or infraction, abuse of authority, poor instruction or service, or any valid cause for complaint against a member of the faculty, a staff, or the administration and in cases when a student's grievance was not satisfied nor fairly responded by an informal resolution."/>
+
+            <TextView
+                android:id="@+id/sgp_proc_2"
+                style="@style/ListItemText"
+                android:text="• The Director for Student Welfare and Development studies the validity of the complaint."/>
+
+            <TextView
+                android:id="@+id/sgp_proc_3"
+                style="@style/ListItemText"
+                android:text="• If the complaint is valid, the Director for Student Welfare and Development shall make representations with the office concerned and endorse the complaint to the said office for appropriate action."/>
+
+            <TextView
+                android:id="@+id/sgp_proc_4"
+                style="@style/ListItemText"
+                android:text="• Once the complaint is brought to the proper office, the Director for Student Welfare and Development makes a series of follow-ups to ensure that the action is done."/>
+
+            <TextView
+                android:id="@+id/sgp_proc_5"
+                style="@style/ListItemText"
+                android:text="• If no action is taken by the office concerned, the Director for Student Welfare and Development may bring up the matter to the higher office, this time, with an added complaint of inaction by the office concerned."/>
+
+            <TextView
+                android:id="@+id/sgp_proc_6"
+                style="@style/ListItemText"
+                android:text="• If the same inaction is present in said higher office, the Director for Student Welfare and Development brings up the matter to even higher offices with added complaints of inaction until the same reaches the University President."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+
+</LinearLayout>

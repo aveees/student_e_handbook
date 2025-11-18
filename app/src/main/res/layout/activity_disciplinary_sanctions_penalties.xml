@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".DisciplinarySanctionsPenaltiesActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Introductory Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="In order to maintain harmony and to protect its educational purposes and processes, the University has the authority to impose penalties or sanctions on any student found to have violated its rules, policies and regulations. While disciplinary sanctions are generally commensurate with the offense's seriousness, multiple or repeated violations may justify more severe disciplinary sanctions."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Penalties are progressive in nature. Possible penalties and sanctions to be applied in various situations include:"
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium_italic"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- List of Penalties -->
+            <TextView
+                android:id="@+id/dspp_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="1. Restitution. Restitution is a repayment. The student must pay for damages to property or loss of property. This includes the expenses for mental health and legal consultation resorted to by students, as maybe evidenced by an official receipt or other similar document."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="2. Reprimand. A reprimand may be in the form of verbal counsel to a student in regards to his/her negative behavior or a written reprimand describing a student’s offense or misconduct, which places on record that a student, in a specific instance, did not meet the behavioral standards expected at the University. A written reprimand from the College Dean, duly noted by the Vice Chancellor for Student Affairs and Services or designee to the student serves as a warning that continued conduct of the type described in the reprimand or other misconduct may result in a more severe disciplinary sanction against the student."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="3. Withholding of an academic record or degree. This penalty is imposed upon a student who fails to pay a debt owed to the University or has a disciplinary case pending final disposition. This penalty terminates upon payment of the debt or upon final disposition of the case."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="4. Suspension. A time-specific suspension is a temporary cessation of educational services and exclusion from the University property and facilities, which can be imposed by the Vice Chancellor for Students Affairs and Services. Students under SPOC (small private online courses) or those under the asynchronous online learning modality may also be suspended by prohibiting the students to submit their outputs within the duration of the suspension. The College, through its Student Discipline Committee, shall notify the concerned offices and units of the students serving the penalty of suspension duly noted by the office of the Executive Vice President. Suspension can be imposed with the following durations: two weeks (minimum period), one month (medium period), or three months (maximum period) which shall be based on the severity of the violation. An accessory penalty of forfeiture of academic, leadership, cultural and athletic awards and distinctions shall be imposed along with a one-month suspension or more."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="5. Dismissal. Dismissal is the termination of educational services and exclusion from the University property and facilities for a period covering an entire semester (minimum period) and for at least one academic year (maximum period). If any, the conditions for readmission will be stated in the order of dismissal. The penalty of dismissal is a decision of the Executive Vice President. A dismissed student can be reinstated only upon the favorable action by the Executive Vice President or designee on his petition for reinstatement. If a student is dismissed, the Board of Student Discipline shall notify the concerned offices and units and the Registrar, which shall have the appropriate disciplinary notation placed on the student's official transcript of records."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="6. Expulsion. Expulsion is permanent severance from the University without provision for readmission. Expulsion prohibits the student from using or entering any University property and from attending any University function. The penalty of expulsion is a decision of the Executive Vice President. If a student is expelled, the Board of Student Discipline shall notify the concerned offices and units and the Registrar, which shall have the appropriate disciplinary notation placed on the student's official transcript of records."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="7. Forfeiture of Academic, Leadership, Cultural and Athletic Awards and Distinctions. Any student who has been found guilty of any offenses involving academic misconduct or any student who has been penalized with finality with a suspension in its minimum period (one month suspension), or a dismissal in its minimum period, or has been punished with expulsion shall also be forfeited of all his/her academic, leadership, and athletic awards and distinctions."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/dsp_item_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="8. Transformative Experience. This sanction is to create a constructive activity that is assigned to students as a redemptive sanction. It is designed to enhance a student’s ability to learn from the disciplinary experience and promote learning that will lead to responsible decision-making in the future. This experience is done during the vacant period of the student or as prescribed by the dean, provided the student will not affect his/her classes. Transformative experience includes community service, psychological intervention and other similar activities."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Concluding Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penalties or sanctions of dismissal or expulsion shall be reflected in the student’s permanent record. However, at any time after three years from the date of the finding in which a sanction was imposed, a student or former student may petition the Executive Vice President or designee to have his or her disciplinary record expunged. The decision to expunge shall be based on the severity of the violation(s), the person’s disciplinary record as a whole, and evidence of good behavior since the violation(s). If the record is expunged, any notation of a disciplinary sanction will be removed from the official academic record maintained by the Office of the Registrar."
+                android:textColor="#064c24"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>

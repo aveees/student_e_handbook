@@ -3,50 +3,44 @@ package com.firstapp.bulsustudente_handbook;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.SpannableString;
-import android.text.style.StyleSpan;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
-public class GeneralPoliciesActivity extends AppCompatActivity {
+public class DisciplinarySanctionsPenaltiesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_policies);
+        setContentView(R.layout.activity_disciplinary_sanctions_penalties);
 
-        // Setup the header
+        // Setup the standard header
         ImageView backBtn = findViewById(R.id.menu_icon);
         TextView headerTitle = findViewById(R.id.header_title);
 
         if (headerTitle != null) {
-            headerTitle.setText("General Policies");
+            headerTitle.setText("Disciplinary Sanctions & Penalties");
         }
         if (backBtn != null) {
             backBtn.setOnClickListener(v -> onBackPressed());
         }
 
-        // --- NEW: Style the list items ---
-        styleListItem(R.id.policy_1, "1.");
-        styleListItem(R.id.policy_2, "2.");
-        styleListItem(R.id.policy_3, "3.");
-        styleListItem(R.id.policy_4, "4.");
-        styleListItem(R.id.policy_5, "5.");
-        styleListItem(R.id.policy_6, "6.");
-        styleListItem(R.id.policy_6a, "a.");
-        styleListItem(R.id.policy_6b, "b.");
-        styleListItem(R.id.policy_6c, "c.");
-        styleListItem(R.id.policy_6d, "d.");
-        styleListItem(R.id.policy_6e, "e.");
-        styleListItem(R.id.policy_6f, "f.");
-        styleListItem(R.id.policy_6g, "g.");
+        // --- Style the list items to make numbers bold ---
+        styleListItem(R.id.dspp_item_1, "1.");
+        styleListItem(R.id.dsp_item_2, "2.");
+        styleListItem(R.id.dsp_item_3, "3.");
+        styleListItem(R.id.dsp_item_4, "4.");
+        styleListItem(R.id.dsp_item_5, "5.");
+        styleListItem(R.id.dsp_item_6, "6.");
+        styleListItem(R.id.dsp_item_7, "7.");
+        styleListItem(R.id.dsp_item_8, "8.");
     }
 
     /**
-     * Finds a TextView and makes the leading number/letter bold.
+     * Finds a TextView and makes the leading number/letter bold using a custom font.
      * @param textViewId The R.id of the TextView to style.
-     * @param boldPart The string part to make bold (e.g., "1.", "a.").
+     * @param boldPart The string part to make bold (e.g., "1.").
      */
     private void styleListItem(int textViewId, String boldPart) {
         TextView textView = findViewById(textViewId);

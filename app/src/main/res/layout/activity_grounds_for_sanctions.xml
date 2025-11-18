@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".GroundsForSanctionsActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Introductory Text Block -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IV. GROUNDS FOR DISCIPLINARY SANCTIONS"
+                    android:textColor="#064c24"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offenses and misconducts are classified into two categories:\n(1) Online offenses committed during online classes or related activities, including those committed beyond online classes against students or university personnel;\n(2) Face-to-face offenses committed during face-to-face sessions within university premises."
+                    android:textColor="#064c24"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <!-- A. ONLINE OFFENSES SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Online Offenses and Misconducts"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Offense Card 1 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Disturbance or disruption of the online educational platform environment, including online classes, forums, webinars, and other similar activities."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours of Transformational Experience, Parents/guardians dialogue with the Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 2 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Misuse of the online educational platform (unauthorized muting or removing any participant)."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours of Transformational Experience, Parents/guardians dialogue with the Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 3 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Unauthorized and unconsented taking of pictures, recording of lectures, publication of academic materials, and screenshots of quizzes/exams."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours of Transformational Experience, Parents/guardians dialogue with the Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Forfeiture of Academic, Leadership, Cultural and Athletic Awards and Distinctions."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 4 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Unauthorized online posting/publishing of personal information violating the Data Privacy Act."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, Parents/guardians dialogue with the Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Forfeiture of Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 5 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Unauthorized online solicitation or selling of tickets."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, Parents/guardians dialogue with the Dean, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Guidance Intervention Program, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Guidance Intervention Program, Restitution, Dismissal (minimum period), Forfeiture of Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 6 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Online cheating during quizzes, exams, including distributing screenshots."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours of Transformational Experience, zero scores for exam, Parents/guardians dialogue with Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, zero scores, forfeiture of awards, failing grade, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, failing grade, Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Forfeiture of Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 7 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Online plagiarism in theses, papers, creative works."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, zero scores, Parents/guardians dialogue with Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, failing grade, Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period)."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), failing grade, Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 8 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Online deception, identity theft, or fraud."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Parents/guardians dialogue with Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Guidance Intervention Program, Forfeiture of Awards, Dismissal (minimum period)."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Forfeiture of Awards, Restitution for mental health/legal expenses may apply as accessory penalty."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 9 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Disrespectful or libelous language against the university community online."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours of Transformational Experience, Parents/guardians dialogue with Dean, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 10 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Use of indecent, obscene, or lewd language online."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Parents/guardians dialogue with Dean, Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Expulsion."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 11 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Falsification or forging electronic academic records or documents."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Parents/guardians dialogue, Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Expulsion."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 12 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Online gender-based sexual harassment."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours of Transformational Experience, Parents/guardians dialogue, Guidance Intervention Program, Forfeiture of Awards."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum period), Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (maximum period), Forfeiture of Awards, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Expulsion, Restitution for mental health/legal expenses may apply."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- B. FACE-TO-FACE OFFENSES SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B. Offenses Committed During Face-to-Face Set-Up"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Offense Card 13 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Deliberate disregard of minimum health protocols/university health guidelines on premises."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours Transformational Experience, Parents/guardians dialogue with Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Forfeiture of Academic, Leadership, Cultural and Athletic Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 14 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Littering, vandalism, or posting unauthorized printed materials on campus."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours Transformational Experience, Parents/guardians dialogue with Dean."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours Transformational Experience, Forfeiture of Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 15 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Disturbance or disruption of the educational environment or related programs."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Written reprimand with warning, 16 hours Transformational Experience, Parents/guardians dialogue."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours Transformational Experience, Guidance Intervention Program."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours Transformational Experience, Forfeiture of Awards."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Offense Card 16 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Unauthorized solicitation of funds or selling tickets on campus."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours Transformational Experience, Parents/guardians dialogue, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension, 36 hours Transformational Experience, Guidance Intervention Program, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Third"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Three months suspension, 36 hours Transformational Experience, Guidance Intervention Program, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Fourth"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Dismissal (minimum), Forfeiture of Awards, Restitution."/>
+                    </TableRow>
+                </TableLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Note: Solicitation performed personally by students in their own capacity is exempt.)"
+                    android:textColor="#064c24"
+                    android:fontFamily="@font/montserrat_medium_italic"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <!-- Offense Card 17 -->
+            <LinearLayout style="@style/OffenseCard">
+                <TextView style="@style/OffenseTitle" android:text="Smoking, gambling, or being under influence of alcohol on premises."/>
+                <TableLayout style="@style/OffenseTable">
+                    <TableRow>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="1" android:text="Offense Count"/>
+                        <TextView style="@style/OffenseHeaderCell" android:layout_weight="3" android:text="Sanction"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="First"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="Two weeks suspension, 24 hours Transformational Experience, Parents/guardians dialogue, Restitution."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableDataCell" android:layout_weight="1" android:text="Second"/>
+                        <TextView style="@style/TableDataCell" android:layout_weight="3" android:text="One month suspension."/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+
+</LinearLayout>

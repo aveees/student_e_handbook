@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".AdminBodiesDisciplineActivity">
+
+    <!-- 1. Fixed Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2. Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <!-- Main Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADMINISTRATIVE BODIES GOVERNING STUDENT DISCIPLINARY PROCEEDINGS, THEIR COMPOSITIONS, FUNCTIONS AND JURISDICTION"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- SECTION A: SDEC -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:text="A. The College Student Discipline and Ethics Committee (SDEC)"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Each academic unit, including satellite campuses and the Laboratory High School, shall have its own Student Discipline and Ethics Committee (SDEC), composed of:"
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Composition of SDEC -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Composition:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_comp_1"
+                android:text="• Chairperson: College Dean (including all external campuses); or Principal for cases involving LHS students"/>
+            <TextView
+                style="@style/SubHeading.SubItem"
+                android:text="Members:"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_sdec_comp_2"
+                android:text="- Local FAU Representative (Secretary)"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_sdec_comp_3"
+                android:text="- LSC Governor or duly authorized representative"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_sdec_comp_4"
+                android:text="- Local Student Affairs Coordinator (faculty member of good standing, preferably with legal knowledge or abreast with these Guidelines)"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_sdec_comp_5"
+                android:text="- College PTA President or duly authorized representative"/>
+
+            <!-- Jurisdiction of SDEC -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Jurisdiction:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_jur_1"
+                android:text="The SDEC has exclusive and primary jurisdiction over complaints against any student or group of students violating University rules and regulations."/>
+
+            <!-- Functions of SDEC -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Functions:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_func_1"
+                android:text="• To receive complaints, conduct investigation, and commence formal or summary hearings on violations of these guidelines."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_func_2"
+                android:text="• To impose preventive suspension on student respondents when necessary for the physical, mental, and emotional well-being of the complainant-student. Preventive suspension may only be for one week without extension and is not a penalty but a precautionary measure."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_func_3"
+                android:text="• To prepare a formal narrative report of proceedings, including findings and recommendations, which is submitted to the Board of Student Discipline (BSD) for review and confirmation."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_sdec_func_4"
+                android:text="• To keep case records confidential and submit reports of accomplishments as required."/>
+
+            <!-- SECTION B: BSD -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:layout_marginTop="24dp"
+                android:text="B. The Board of Student Discipline (BSD)"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="The University shall have two Boards of Student Discipline: one for the Main Campus and one for the Satellite Campuses."
+                android:textColor="#064c24"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Composition of BSD -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Composition:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_comp_1"
+                android:text="• Chairperson: Vice Chancellor for Students Affairs and Services (Main Campus or Satellite Campuses)"/>
+            <TextView
+                style="@style/SubHeading.SubItem"
+                android:text="Members:"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_bsd_comp_2"
+                android:text="- Dean of the College or Satellite concerned (Secretary)"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_bsd_comp_3"
+                android:text="- Supreme Government President or duly authorized representative"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_bsd_comp_4"
+                android:text="- Director for Legal Affairs and Services or duly authorized representative"/>
+            <TextView
+                style="@style/ListItemText.Inner"
+                android:id="@+id/abd_bsd_comp_5"
+                android:text="- University PTA President or duly authorized representative"/>
+
+            <!-- Jurisdiction of BSD -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Jurisdiction:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_jur_1"
+                android:text="The BSD has appellate jurisdiction over all decisions, findings, and recommendations forwarded by the College SDEC."/>
+
+            <!-- Functions of BSD -->
+            <TextView
+                style="@style/SubHeading"
+                android:text="Functions:"/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_1"
+                android:text="• To review case records forwarded by the SDEC."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_2"
+                android:text="• To provide a written reprimand or impose penalties if the student respondent refuses to file an appeal to the Executive Vice President within the prescribed period."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_3"
+                android:text="• The Board has the authority to impose the maximum penalty of suspension, in its maximum period, once the case reaches finality."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_4"
+                android:text="• Only the Executive Vice President or the Board of Regents can impose the penalties of dismissal or expulsion."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_5"
+                android:text="• To affirm, reverse, or modify the penalties recommended by the College SDEC."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_6"
+                android:text="• To prepare formal narrative reports for record keeping and for the Office of the Executive Vice President's perusal in appeals."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_bsd_func_7"
+                android:text="• To forward all cases recommending dismissal or expulsion to the Executive Vice President for review and final decision."/>
+
+
+            <!-- PROCEDURAL FRAMEWORK -->
+            <TextView
+                style="@style/OffenseTitle"
+                android:layout_marginTop="24dp"
+                android:text="Procedural Framework"
+                android:textSize="16sp"/>
+
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_1"
+                android:text="• Complaints must be formal, written statements, signed by the complainant, clearly stating the facts and acts of offense, including for minor complainants, a parent or guardian's signature."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_2"
+                android:text="• The complainant must specifically name all responsible persons and file the complaint with the College Secretary, who refers it to the SDEC. The SDEC reviews form and substance within three days."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_3"
+                android:text="• If insufficient, the complaint is dismissed; the complainant may appeal to the BSD within five days."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_4"
+                android:text="• Respondents have five days to file a formal Answer to allegations. Failure to answer allows the SDEC to proceed based on the complaint."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_5"
+                android:text="• Hearings are informal, virtual, and involve all parties, their families, witnesses, and legal counsel."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_6"
+                android:text="• The SDEC decides penalties by majority vote and documents decisions."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_7"
+                android:text="• The BSD holds appellate hearings within five days of receiving SDEC recommendations."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_8"
+                android:text="• Motions for Reconsideration may be filed with the BSD within five days of their decision."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_9"
+                android:text="• BSD decisions become final if no reconsideration is filed or is denied."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_10"
+                android:text="• The BSD prepares reports and informs concerned parties and faculty regarding the nature, duration, and effects of penalties, except for dismissal and expulsion, which are decided by the Executive Vice President and Board of Regents."/>
+            <TextView
+                style="@style/ListItemText"
+                android:id="@+id/abd_proc_11"
+                android:text="• The Executive Vice President, Chancellors, and Vice Chancellors handle dismissal and expulsion appeals with appellate jurisdiction exclusive and automatic over those cases."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 3. Fixed logos at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:contentDescription="Bustos Campus Logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"
+            android:contentDescription="Eagles Logo"/>
+    </LinearLayout>
+</LinearLayout>
