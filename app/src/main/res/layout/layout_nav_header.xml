@@ -70,6 +70,11 @@
                 android:id="@+id/btn_scheduler"
                 android:text="SCHEDULER"
                 style="@style/SideNavButton" />
+
+            <Button
+                android:id="@+id/btn_forms"
+                android:text="FORMS"
+                style="@style/SideNavButton" />
         </LinearLayout>
 
         <!-- Spacer -->

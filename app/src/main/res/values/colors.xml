@@ -6,4 +6,7 @@
     <color name="bulsu_dark_green">#37B34A</color>
     <color name="bulsu_gold">#EAF48F</color>
     <color name="bulsu_leaf">#50C648</color>
+    <color name="green_selected">#4CAF50</color>
+    <color name="transparent_unselected">#00FFFFFF</color> <!-- pure transparent -->
+    <color name="darker_gray">#616161</color>
 </resources>

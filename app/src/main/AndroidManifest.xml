@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -124,6 +125,8 @@
         <activity android:name=".StudentOrganizations" />
         <activity android:name=".StudentOrgDetailActivity" />
         <activity android:name=".AcademicRegulationsActivity" />
+        <activity android:name=".FormsActivity" />
+        <activity android:name=".LSCActivity" />
 
         <!-- New activities from your switch statement -->
         <activity android:name=".AdmissionRequirementActivity" android:exported="false"/>

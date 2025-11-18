@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"
+    tools:context=".MissionActivity">
+
+    <!-- Header -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/admin_building"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/admin_bldg"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        android:adjustViewBounds="true" />
+
+    <!-- Overlay -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/gradient_overlay" />
+
+    <!-- DOWNLOADABLE FORMS LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forms_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_section"
+        android:layout_above="@id/footer_logos"
+        android:paddingTop="16dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/layout_form_item" />
+
+
+    <!-- Footer Logos -->
+    <LinearLayout
+        android:id="@+id/footer_logos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/eagles_logo"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bustos_logo" />
+    </LinearLayout>
+
+</RelativeLayout>

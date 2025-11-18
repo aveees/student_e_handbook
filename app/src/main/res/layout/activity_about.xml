@@ -156,7 +156,7 @@
                 android:fontFamily="@font/montserrat_semibold"
                 android:textStyle="italic"
                 android:lineSpacingExtra="4dp"
-                android:text="This application was developed by dedicated students from Bulacan State University – Bustos Campus as part of their BS Information Technology program for the year 2025."
+                android:text="This application was developed by dedicated students from Bulacan State University – Bustos Campus as part of their BS Information Technology program for A.Y 2025-2026."
                 android:layout_marginBottom="10dp"/>
 
 

@@ -2,6 +2,8 @@ package com.firstapp.bulsustudente_handbook;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -49,6 +51,7 @@ public class DashboardActivity extends AppCompatActivity {
         Button btnGoals = headerView.findViewById(R.id.btn_goals);
         Button btnCalendar = headerView.findViewById(R.id.btn_calendar);
         Button btnScheduler = headerView.findViewById(R.id.btn_scheduler);
+        Button btnForms = headerView.findViewById(R.id.btn_forms);
 
         btnAbout.setOnClickListener(v -> {
             startActivity(new Intent(DashboardActivity.this, AboutActivity.class));
@@ -64,15 +67,29 @@ public class DashboardActivity extends AppCompatActivity {
         btnGoals.setOnClickListener(v -> {
             startActivity(new Intent(DashboardActivity.this, GoalsActivity.class));
         });
+        btnForms.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, FormsActivity.class));
+        });
 
         iconMenu = findViewById(R.id.menu_icon);
 
         iconMenu.setOnClickListener(v -> drawerLayout.openDrawer(navigationView));
 
-        // --- Search Bar ---
+        // --- RecyclerView ---
+        recyclerCards = findViewById(R.id.recycler_cards);
+        recyclerCards.setLayoutManager(new LinearLayoutManager(this));
+
+        loadCardData();
+
+// CREATE ADAPTER FIRST
+        cardAdapter = new CardAdapter(cardList);
+        recyclerCards.setAdapter(cardAdapter);
+
+// --- Search Bar (move this AFTER adapter creation) ---
         searchField = findViewById(R.id.search_field);
         searchField.setSingleLine(true);
         searchField.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
+
         searchField.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH ||
                     (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
@@ -82,14 +99,20 @@ public class DashboardActivity extends AppCompatActivity {
             return false;
         });
 
-        // --- RecyclerView ---
-        recyclerCards = findViewById(R.id.recycler_cards);
-        recyclerCards.setLayoutManager(new LinearLayoutManager(this));
+        searchField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-        loadCardData();
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (cardAdapter != null) {   // Safety check
+                    cardAdapter.filter(s.toString());
+                }
+            }
 
-        cardAdapter = new CardAdapter(cardList);
-        recyclerCards.setAdapter(cardAdapter);
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
 
         // --- Footer ---
         footerText = findViewById(R.id.footer_text);
@@ -123,7 +146,9 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void performSearch(String query) {
-        // TODO: Implement actual search logic
-        Toast.makeText(this, "Search: " + query, Toast.LENGTH_SHORT).show();
+        if (cardAdapter != null) {
+            cardAdapter.filter(query);
+        }
     }
+
 }
