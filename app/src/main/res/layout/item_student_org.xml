@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/orgImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_placeholder"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+
+    <TextView
+        android:id="@+id/orgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISICPE"
+        android:textStyle="bold"
+        android:textColor="#0A4D0A"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/orgDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Integrated Students of Industrial and Computer Engineering"
+        android:textColor="#0A4D0A"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

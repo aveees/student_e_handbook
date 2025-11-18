@@ -19,9 +19,13 @@ public class GoalsActivity extends AppCompatActivity {
             "3. BulSU in Regional Development;\n" +
             "4. Sound Financial Management and Resource Generation; and\n" +
             "5. Good Governance.";
-    private final String goalsTagalog = "Ang Bulacan State University ay isang progresibong institusyong lumilikha ng kaalaman na" +
-            " kinikilala sa daigdig sa pinakamahusay na pagtuturo, " +
-            "nangungunang mga pananaliksik, at maagap na pagtugon sa pangangailangan ng komunidad.";
+    private final String goalsTagalog = "Sa pagtupad ng misyon nito, isinusulong ng Unibersidad ang mga programang nakatuon\n" +
+            "sa pagkamit ng mga sumusunod na layunin:\n" +
+            "1. Pagbibigay ng Makabuluhan, Mataas na Kalidad, at Likas na Makatarungang Edukasyon;\n" +
+            "2. Pagsasagawa ng Makabago, Masinop, at Tumutugong mga Programa sa Pananaliksik at Paglilingkod sa Komunidad;\n" +
+            "3. Mas Pinatibay na Papel ng BulSU sa Kaunlarang Panrehiyon;\n" +
+            "4. Matatag at Responsableng Pamamahala sa Pananalapi at Epektibong Paglikha ng mga Kinakailangang Yaman; at\n" +
+            "5. Pagtatatag ng Tapat, Mahusay, at Makabayang Pamamahala.";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

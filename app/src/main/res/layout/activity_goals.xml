@@ -88,8 +88,13 @@
                 android:textSize="15sp"
                 android:gravity="center"
                 android:lineSpacingExtra="4dp"
-                android:text="The Bulacan State University exists to produce highly competent, ethical and service-oriented professionals that contribute to the sustainable socio-economic growth and development of the nation." />
-        </ScrollView>
+                android:text="In the pursuit of its mission, the University gears its initiatives and efforts\n
+            towards attainment of the following goals:\n
+            1. Provide Relevant Quality and Accessible Education;\n
+            2. Provide Innovative and Responsive Research and Extension Programs;\n
+            3. BulSU in Regional Development;\n
+            4. Sound Financial Management and Resource Generation; and\n
+            5. Good Governance." />     </ScrollView>
     </LinearLayout>
 
     <!-- Footer Logos -->
