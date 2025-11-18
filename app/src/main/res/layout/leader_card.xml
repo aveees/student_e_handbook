@@ -1,0 +1,99 @@
+<!-- res/layout/leader_card.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/rounded_card">
+
+    <!-- Leader Info Row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Leader Image (Circular with background) -->
+        <ImageView
+            android:id="@+id/leader_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_placeholder"
+            android:contentDescription="Leader Image"
+            android:scaleType="centerCrop"
+            android:background="@drawable/profile_circle_bg"
+            android:clipToOutline="true"
+            android:outlineProvider="background" />
+
+        <!-- Name and Position -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/leader_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:text="Leader Name"
+                android:textSize="16sp"
+                android:textColor="#2E4800"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/leader_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Leader Position"
+                android:textSize="14sp"
+                android:textColor="#4E5F34" />
+        </LinearLayout>
+
+        <!-- Dropdown Button -->
+        <ImageButton
+            android:id="@+id/leader_dropdown"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_dropdown"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dropdown Options" />
+    </LinearLayout>
+
+    <!-- Accordion-style Dropdown Content (Initially Hidden) -->
+    <LinearLayout
+        android:id="@+id/dropdown_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/action1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credential: MSc"
+            android:textColor="#2E4800"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/action2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course: BSCS"
+            android:textColor="#2E4800"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+</LinearLayout>

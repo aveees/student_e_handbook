@@ -124,6 +124,7 @@
         <activity android:name=".StudentOrganizations" />
         <activity android:name=".StudentOrgDetailActivity" />
         <activity android:name=".AcademicRegulationsActivity" />
+        <activity android:name=".LSCActivity" />
     </application>
 
 </manifest>

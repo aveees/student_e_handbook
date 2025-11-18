@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <!-- HEADER -->
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- MAIN CONTENT -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ORG LOGO -->
+            <ImageView
+                android:id="@+id/orgImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/lsc_logo"
+                android:padding="12dp" />
+
+            <!-- ORG DESCRIPTION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_card"
+                android:padding="16dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/orgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LSC — Local Student Council of Bulacan State University Bustos Campus"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#2E4800" />
+
+                <TextView
+                    android:id="@+id/orgDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Sa pagsalubong ng Taong Akademiko 2025–2026, ipinakikilala ng Bulacan State University – Bustos Campus Local Student Council ang mas pinatibay at pinagyamang anyo ng ating opisyal na logo. Hindi lamang ito simpleng pagbabago sa anyo, kundi malinaw na pagsasakatawan ng ating pagkakakilanlan, diwa, at mithiin bilang mga Iskolar ng Bayan. 🦅💚
+
+\n\nAng dalawang ulo ng agila ay kumakatawan sa matatag na pamumuno at pagkakaisa, habang ang nakabukang pakpak ay sagisag ng kalayaan at pag-asa. Samantala, ang apoy sa tuktok nito ay sagisag nag-aalab na sigasig at walang-humpay na dedikasyon para sa patuloy na paglilingkod sa bawat estudyante
+
+\n\nSa bagong anyo ng ating sagisag, paalala ito na ang LSC ay laging kaagapay—handang makinig, maglingkod, at magsilbing tinig ng bawat mag-aaral.
+
+\n\nSama-sama tayong lilipad nang mas mataas at nag-aalab, dala ang tapang ng agila, ang alab ng ating mga puso, at ang pagkakaisang nagbibigay-lakas sa bawat Iskolar ng Bayan. ✨"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#4E5F34"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Inside NestedScrollView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/officersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:nestedScrollingEnabled="false"/>
+
+
+            <!-- FACEBOOK LINK -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_card">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/facebook_icon" />
+
+                <TextView
+                    android:id="@+id/fbLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="https://www.facebook.com/BulSUBustosLSC"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#2E4800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- EMAIL LINK -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_card">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/email_icon" />
+
+                <TextView
+                    android:id="@+id/emailLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="bulsubustos.lsc@gmail.com"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#2E4800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- FOOTER LOGOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:layout_marginRight="16dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo" />
+    </LinearLayout>
+
+</LinearLayout>
