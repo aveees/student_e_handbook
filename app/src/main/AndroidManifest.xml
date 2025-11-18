@@ -107,6 +107,8 @@
         <activity android:name=".VisionActivity" />
         <activity android:name=".GoalsActivity" />
         <activity android:name=".HymnActivity" />
+        <activity android:name=".StudentOrganizations" />
+        <activity android:name=".StudentOrgDetailActivity" />
         <activity android:name=".AcademicRegulationsActivity" />
     </application>
 
