@@ -147,6 +147,10 @@
         <activity android:name=".CommencementExercisesActivity" android:exported="false"/>
         <activity android:name=".GraduationAwardsActivity" android:exported="false"/>
         <activity android:name=".StudentRecordsActivity" android:exported="false"/>
+        <activity android:name=".BulsuHymnEnglishActivity" android:exported="false" />
+        <activity android:name=".BulsuHymnTagalogActivity" android:exported="false" />
+        <activity android:name=".BulsuMarchTagalogActivity" android:exported="false" />
+        <activity android:name=".BulsuMarchEnglishActivity" android:exported="false" />
 
     </application>
 

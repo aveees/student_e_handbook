@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_hymn_activity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <include
+        android:id="@+id/header_section"
+        layout="@layout/layout_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- BulSU Hymn Card -->
+            <LinearLayout
+                android:id="@+id/bulsu_hymn_card"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:id="@+id/bulsu_hymn_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BulSU Hymn"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#064c24"/>
+
+                    <ImageView
+                        android:id="@+id/bulsu_hymn_arrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_dropdown"
+                        app:tint="#064c24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bulsu_hymn_options_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/bulsu_hymn_tagalog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tagalog Version"
+                        android:textSize="18sp"
+                        android:textColor="#064c24"
+                        android:paddingVertical="12dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        app:drawableTint="#064c24" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CCCCCC" />
+
+                    <TextView
+                        android:id="@+id/bulsu_hymn_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English Version"
+                        android:textSize="18sp"
+                        android:textColor="#064c24"
+                        android:paddingVertical="12dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        app:drawableTint="#064c24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BulSU March Card -->
+            <LinearLayout
+                android:id="@+id/bulsu_march_card"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:id="@+id/bulsu_march_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BulSU March"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#064c24"/>
+
+                    <ImageView
+                        android:id="@+id/bulsu_march_arrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_dropdown"
+                        app:tint="#064c24"/>
+                </LinearLayout>
+
+                <!-- NEW: Options container for BulSU March -->
+                <LinearLayout
+                    android:id="@+id/bulsu_march_options_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/bulsu_march_tagalog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tagalog Version"
+                        android:textSize="18sp"
+                        android:textColor="#064c24"
+                        android:paddingVertical="12dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        app:drawableTint="#064c24" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CCCCCC" />
+
+                    <TextView
+                        android:id="@+id/bulsu_march_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English Version"
+                        android:textSize="18sp"
+                        android:textColor="#064c24"
+                        android:paddingVertical="12dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        app:drawableTint="#064c24" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bustos_logo"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eagles_logo"/>
+    </LinearLayout>
+</LinearLayout>
