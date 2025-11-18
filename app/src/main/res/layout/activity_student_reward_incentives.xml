@@ -28,6 +28,144 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- STUDENTS REWARDS AND INCENTIVES Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/student_rewards_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENTS REWARDS AND INCENTIVES"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Paragraph Text -->
+                <TextView
+                    android:id="@+id/student_rewards_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="In order to encourage excellence and development of skills among the students, in fields of curricular, co-curricular, and extracurricular activities, the University, with the participation of the Office of Student Development, shall provide academic and non-academic honors to deserving students and faculty members based on the approved criteria and standards set by the Committee of Awards." />
+
+                <!-- Academic, Sports and Cultural Competitions Table -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Academic, Sports and Cultural Competitions"
+                    android:textColor="#064c24"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_medium" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView android:text="Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="Regional Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="National Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 1st Place -->
+                    <TableRow>
+                        <TextView android:text="1st Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="1,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="1,500.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 2nd Place -->
+                    <TableRow>
+                        <TextView android:text="2nd Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="700.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="1,200.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 3rd Place -->
+                    <TableRow>
+                        <TextView android:text="3rd Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="500.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="800.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- Coaches Note -->
+                    <TableRow>
+                        <TextView android:text="(plus 50% to coaches)" android:padding="8dp" android:layout_span="3" android:textColor="#064c24" android:textStyle="italic" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+                </TableLayout>
+
+                <!-- Winners in Beauty Contests Table -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Winners in Beauty Contests"
+                    android:textColor="#064c24"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_medium" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView android:text="Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="Regional Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="National Level" android:textStyle="bold" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 1st Place -->
+                    <TableRow>
+                        <TextView android:text="1st Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="5,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="10,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 2nd Place -->
+                    <TableRow>
+                        <TextView android:text="2nd Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="3,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="8,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- 3rd Place -->
+                    <TableRow>
+                        <TextView android:text="3rd Place" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="1,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                        <TextView android:text="5,000.00" android:padding="8dp" android:textColor="#064c24" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+
+                    <!-- Coaches Note -->
+                    <TableRow>
+                        <TextView android:text="(plus 50% to coaches)" android:padding="8dp" android:layout_span="3" android:textColor="#064c24" android:textStyle="italic" android:background="@drawable/table_cell_border"/>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

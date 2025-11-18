@@ -28,6 +28,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- STUDENT GOVERNMENT Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/student_government_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT GOVERNMENT"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <!-- Paragraph Text -->
+                <TextView
+                    android:id="@+id/student_government_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="textStart"
+                    android:text="The Bulacan State University Student Government (BSU-SG) provides a means for student participation in student governance in the University campuses. It assists in the protection of the rights and interests of the individual student and the student body and serves as an official voice through which students may express their opinions on issues affecting their rights, welfare and development.\n\nThe Student Government operates and functions according to its Constitution and By-laws, Resolutions and Ordinances. The BulSU Student Government consists of two chambers: The Supreme Student Council which comprises the President, Vice President (who are elected at large), Senators, and Ex-Officio Senators; and The Local Student Council which comprises College Governors, Vice Governors, and Board Members. The Campus Governors also assume the post of Ex-Officio Senators. Each class/section shall have Class Mayors, Deputy Class Mayors, and officers.\n\nThe President of the Student Government shall automatically become the student representative in the University Board of Regents. The President and the rest of the officers shall have a fixed term of one year only." />
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

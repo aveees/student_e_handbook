@@ -28,8 +28,650 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Career Development and Student Internship Services Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/cardsi_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Career Development and Student Internship Services"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/cardsi_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="The goal of current restructuring and reform initiatives of Bulacan State University is to prepare students with these important prerequisites.
+
+Thus, the Career Development and Student Internship (CarDSI) Office, based on CMO 09, s2013 of the Enhanced Policies and Guidelines on Student Affairs and Services, Article VII Student Welfare, mandates that basic services such as Career and Job Placement are necessary for the well-being of students.
+
+Since the University has its own Placement and Public Employment Service Office (PPESO) which handles the job placement of graduating students and job seekers, the CarDSI office will facilitate the professional and personal aspirations of students for internship in the Philippines, career planning and decision-making, and admission to graduate school.
+
+The CarDSI works with Student Internship Program (SIP) coordinators and staff to provide an array of career-related services based on the shared goal of student success. This collaboration supports the student transition from campus to workplace. The office believes that a strong partnership between faculty/staff and the CarDSI can combine the strengths and resources for the benefit of the students." />
+            </LinearLayout>
+            <!-- Functions of the Office Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/functions_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Functions of the Office"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Bullet List -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Support students to make informed choices about future work or study and understand the general skills and self-management capacity they will need to achieve this."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Provides career counselling to prospective graduates in preparation for their internship and/or entry into a career or employment."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Facilitates students in their transition to the world of employment through organizing career guidance programs and career orientation activities that address the needs of students at key stages/phases of their career decision-making process."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Keeps pace with technology and integrate it effectively into career development services."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Maintains a centralized data banking of intern students’ information, profile, and affiliation."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Builds relationships across the school organization and with employers, industry, vocational education and training institutions, universities, parents, and the local community to make the career service relevant to students."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Establishes formal linkages with the employment sector to secure access for internship programs and other related career development programs."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Supervises and coordinates with student internship coordinators from the respective colleges/campus for the effective and efficient implementation and evaluation of programs."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Provides informative materials in accessible formats on career opportunities and skills enhancement."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Provide standards and guidelines for conducting internship such as memorandum of agreement, training contract, evaluation system, and other documents."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Collaborates with Student Internship Program (SIP) Coordinators in selecting Host Training Establishment (HTE)."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Monitors SIP Coordinators implementation of all phases of the training."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Services Offered Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/services_offered_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services Offered"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Bullet List -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Responsible for briefing the student-interns who intend to undergo practicum exposure."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="To provide the student-interns basic orientation on work ethics, behavior, and discipline to ensure smooth transition and cooperation."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="To recommend only qualified student-interns in the internship program."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="To voluntarily withdraw a student-intern, who is found to misbehave and/or act in defiance to existing standard, rules, and regulations and shall implement necessary university sanction/s to the student-intern as provided in this student handbook."
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Operating Procedures of Office Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/operating_procedures_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operating Procedures of Office"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/operating_procedures_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="textStart"
+                    android:text="Every College has a different schedule for internship of their students. In some colleges, internship can be as early as summer before their third year. Orientation is held to inform enrolled students of the internship requirements and the placement process procedure. Following this meeting, students complete the Student-Intern Information Sheet and all requested information listed on form. The student will be furnished with a list of Host Training Establishment (HTE). The student is asked to list three potential internship sites from the list and if it is not on the list, the student should inform the SIP Coordinator to determine the agency/company/institution’s acceptability and if it is willing to accept an Intern in order to make necessary arrangement for partnership. The student contacts each of the identified and approved agencies and checks to see if the agency is willing to accept an Intern. If the agency is willing, the student makes an interview appointment. When the SIP Coordinator and student have made the final agency selection, necessary documents are prepared and signed by the student, the agency representative, the SIP coordinator and the student’s parent. Then and only then is the intern site placement process officially complete. Students who fail to submit to the above mentioned process will automatically be de-registered from their internship course. Each College/ Campus have their peculiarities and so, some requirements of interns will differ. (refer to Internship Manual by college). The student/intern should know the following practices:" />
+
+                <!-- Bullet Points -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Contact site supervisor a few days before student/intern begins"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Notify SIP Coordinators at the start of the internship you start your hours"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Attend host site orientation (as required)"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Maintain analytical field learning journal"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Maintain regular contact with SIP coordinator"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Attend campus meetings/seminars/activities (if required)"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Arrange for SIP Coordinator to visit site"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_arrow_right" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Have an exit strategy: bring your internship to a smooth conclusion: say goodbyes, give thanks, contact SIP Coordinator about the next steps"
+                            android:textColor="#064c24"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Note -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note: For the International Internship Program, it will be handled by the office of the Director for International Affairs in accordance with CMO No.22, s.2013."
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
     <!-- Fixed Logos at Bottom -->

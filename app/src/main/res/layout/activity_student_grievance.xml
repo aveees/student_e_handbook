@@ -28,6 +28,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Student Grievance Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/student_grievance_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Grievance"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/student_grievance_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="center"
+                    android:text="Aside from the above-mentioned duties and functions, the Office of the Student Welfare is tasked by the OSAS to facilitate and process student grievances. The Director for Student Welfare (DSW) serves as the receiver and facilitator of complaints and grievances from students. He/she has neither recommendatory nor disciplinary authority, but undertakes follow-ups on complaints and grievances referred to it.
+
+The office screens and studies the complaints and determines whether they are valid or not before they are forwarded to the office concerned for appropriate actions. If there is a possibility of mediation, the office may make representations with the office concerned in order to settle amicably the complaint or grievance. If the complaint is directed against the DSW, the student may directly report to the Dean of Student Affairs and Services who shall then take the appropriate action." />
+
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

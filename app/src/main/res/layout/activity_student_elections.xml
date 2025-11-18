@@ -28,6 +28,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Commission on Student Elections Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/cse_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Commission on Student Elections"
+                    android:textColor="#064c24"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/cse_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064c24"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="center"
+                    android:text="The Commission on Student Elections (CSE) is under the guidance and stewardship of the Office of the Student Welfare. The Commission is composed of bona fide students of Bulacan State University who are of good moral character and academic standing and are recommended by their respective college/campus deans. An appointed commissioner shall serve for a maximum of two years.
+
+The CSE’s main function is to facilitate and ensure fair, honest, orderly, and clean Student Government Elections (SGE). Every year, the conduct of SGE is facilitated by CSE and concomitant to this mandate is the preparation of official documents and budget related to the conduct of the elections. The Director of the Student Welfare (DSW) shall appoint a set of faculty advisers for the Commission to directly supervise their programs and activities. The DSW and the faculty advisers of the Commission shall address all complaints and irregularities within the conduct of the elections." />
+
+            </LinearLayout>
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
