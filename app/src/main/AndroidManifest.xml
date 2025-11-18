@@ -95,6 +95,22 @@
             android:exported="false" />
         <activity android:name=".StudentsGrievanceProcedureActivity"
             android:exported="false" />
+        <activity android:name=".ScheduleActivity"
+            android:exported="false" />
+        <activity android:name=".ProgramFacultyActivity"
+            android:exported="false" />
+        <activity android:name=".FormsActivity"
+            android:exported="false" />
+        <activity android:name=".CbaActivity"
+            android:exported="false" />
+        <activity android:name=".CiteActivity"
+            android:exported="false" />
+        <activity android:name=".CoedActivity"
+            android:exported="false" />
+        <activity android:name=".CitActivity"
+            android:exported="false" />
+
+
         <!-- Splash screen as launcher -->
         <activity
             android:name=".SplashActivity"
