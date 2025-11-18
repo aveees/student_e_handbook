@@ -124,6 +124,27 @@
         <activity android:name=".StudentOrganizations" />
         <activity android:name=".StudentOrgDetailActivity" />
         <activity android:name=".AcademicRegulationsActivity" />
+
+        <!-- New activities from your switch statement -->
+        <activity android:name=".AdmissionRequirementActivity" android:exported="false"/>
+        <activity android:name=".ChangeAcademicLoadActivity" android:exported="false"/>
+        <activity android:name=".SubstitutionSubjectsActivity" android:exported="false"/>
+        <activity android:name=".TutorialSpecialClassesActivity" android:exported="false"/>
+        <activity android:name=".DroppingSubjectsActivity" android:exported="false"/>
+        <activity android:name=".AttendanceActivity" android:exported="false"/>
+        <activity android:name=".AbsencesActivity" android:exported="false"/>
+        <activity android:name=".LeaveOfAbsenceActivity" android:exported="false"/>
+        <activity android:name=".MaximumResidencyActivity" android:exported="false"/>
+        <activity android:name=".ExaminationsActivity" android:exported="false"/>
+        <activity android:name=".GradingSystemActivity" android:exported="false"/>
+        <activity android:name=".TransparencyCorrectionActivity" android:exported="false"/>
+        <activity android:name=".AcademicDelinquencyActivity" android:exported="false"/>
+        <activity android:name=".GoldGearAwardsActivity" android:exported="false"/>
+        <activity android:name=".GraduationRequirementsActivity" android:exported="false"/>
+        <activity android:name=".CommencementExercisesActivity" android:exported="false"/>
+        <activity android:name=".GraduationAwardsActivity" android:exported="false"/>
+        <activity android:name=".StudentRecordsActivity" android:exported="false"/>
+
     </application>
 
 </manifest>
